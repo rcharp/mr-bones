@@ -53,10 +53,10 @@ const AboutSection = () => (
         >
           <div className="rounded-2xl overflow-hidden shadow-2xl">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3537.2!2d-82.62!3d27.52!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDMxJzEyLjAiTiA4MsKwMzcnMTIuMCJX!5e0!3m2!1sen!2sus!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3537.235860983608!2d-82.57248938797551!3d27.555189576171195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c3197718acd711%3A0x5d1b29104c06ff28!2sEmmons!5e0!3m2!1sen!2sus!4v1770394947689!5m2!1sen!2sus"
               width="100%"
-              height="400"
-              style={{ border: 0 }}
+              height="450"
+              style={{ border: 0, maxWidth: "100%" }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
