@@ -112,7 +112,8 @@ const Header = () => {
           </a>
           <button
             onClick={openQuoteModal}
-            className="px-4 lg:px-6 py-2 lg:py-2.5 bg-secondary text-secondary-foreground text-sm font-semibold rounded-full hover:opacity-90 transition-opacity"
+            className="px-4 lg:px-6 py-2 lg:py-2.5 text-sm font-semibold rounded-full hover:opacity-90 transition-opacity"
+            style={{ backgroundColor: "#f59e0b", color: "#fff" }}
           >
             Get Quote
           </button>
@@ -192,7 +193,8 @@ const Header = () => {
                 </a>
                 <button
                   onClick={() => { setMobileOpen(false); openQuoteModal(); }}
-                  className="block w-full text-center px-6 py-3 bg-secondary text-secondary-foreground text-sm font-semibold rounded-full"
+                  className="block w-full text-center px-6 py-3 text-sm font-semibold rounded-full"
+                  style={{ backgroundColor: "#f59e0b", color: "#fff" }}
                 >
                   Get Free Quote
                 </button>
