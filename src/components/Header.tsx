@@ -115,7 +115,7 @@ const Header = () => {
             className="px-4 lg:px-6 py-2 lg:py-2.5 text-sm font-semibold rounded-full hover:opacity-90 transition-opacity"
             style={{ backgroundColor: "#f59e0b", color: "#fff" }}
           >
-            Get Quote
+            Get Free Quote
           </button>
 
           {/* Mobile Toggle */}
