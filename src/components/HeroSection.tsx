@@ -119,7 +119,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             id="quote-form"
-            className="rounded-2xl overflow-hidden shadow-2xl w-full lg:w-[440px] lg:ml-auto"
+            className="rounded-2xl overflow-hidden w-full lg:w-[440px] lg:ml-auto"
             style={{ minHeight: "883px" }}
           >
             <iframe
