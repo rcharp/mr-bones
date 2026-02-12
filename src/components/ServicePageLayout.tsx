@@ -21,10 +21,12 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
       <Header />
       <main>
         {/* Hero */}
-        <section className="relative overflow-hidden">
-          <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${heroServices})` }}
+        <section className="relative overflow-hidden bg-black">
+          <img
+            src={heroServices}
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500"
+            onLoad={(e) => { (e.target as HTMLImageElement).style.opacity = '1'; }}
           />
           <div className="absolute inset-0 bg-black/70" />
           <div className="container mx-auto px-4 lg:px-8 py-20 lg:py-32 relative z-10 text-center">
