@@ -156,3 +156,11 @@
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
 }
+
+/* Force quote form iframe visibility */
+#inline-P2loR2dW6LgPnGhKf4Px {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}

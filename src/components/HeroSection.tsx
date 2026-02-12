@@ -119,12 +119,12 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             id="quote-form"
-            className="rounded-2xl overflow-hidden shadow-2xl border-2"
+            className="rounded-2xl overflow-hidden shadow-2xl border-2 min-h-[600px] lg:min-h-0"
             style={{ backgroundColor: "rgba(15, 23, 42, 0.6)", borderColor: "#3b82f6" }}
           >
             <iframe
               src="https://api.juniesystems.com/widget/form/P2loR2dW6LgPnGhKf4Px"
-              style={{ width: "100%", height: "883px", border: "none", borderRadius: "10px" }}
+              style={{ width: "100%", height: "883px", border: "none", borderRadius: "10px", display: "block", opacity: 1, visibility: "visible" as const }}
               id="inline-P2loR2dW6LgPnGhKf4Px"
               data-layout="{'id':'INLINE'}"
               data-trigger-type="alwaysShow"
