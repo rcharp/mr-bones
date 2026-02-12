@@ -116,7 +116,7 @@ const ContactPage = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 className="rounded-2xl overflow-hidden shadow-2xl border-2"
-                style={{ backgroundColor: "rgba(15, 23, 42, 0.6)", borderColor: "#3b82f6" }}
+                style={{ backgroundColor: "#0f172a", borderColor: "#3b82f6" }}
               >
                 <iframe
                   src="https://api.juniesystems.com/widget/form/P2loR2dW6LgPnGhKf4Px"
