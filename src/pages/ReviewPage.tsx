@@ -37,7 +37,7 @@ const ReviewPage = () => {
           <div className="bg-card rounded-2xl border border-border card-elevated overflow-hidden">
             <iframe
               src="https://api.juniesystems.com/widget/survey/GDi5S8ill5dR5K4tNV1Q"
-              style={{ width: "100%", minHeight: "800px", border: "none" }}
+              style={{ width: "100%", minHeight: "400px", border: "none" }}
               id="GDi5S8ill5dR5K4tNV1Q"
               title="survey"
             />
