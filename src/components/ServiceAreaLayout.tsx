@@ -160,7 +160,7 @@ const ServiceAreaPage = ({ city, tagline, intro }: ServiceAreaPageProps) => {
                 style={{ borderRadius: "10px" }}
               >
                 <Phone className="w-5 h-5" />
-                Call Now
+                (941) 258-4006
               </a>
               <button
                 onClick={openQuoteModal}
