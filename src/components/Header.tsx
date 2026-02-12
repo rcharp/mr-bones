@@ -105,7 +105,7 @@ const Header = () => {
         <div className="flex items-center gap-2 lg:gap-3">
           <a
             href="tel:+19412584006"
-            className="flex items-center gap-1.5 lg:gap-2 px-3 lg:px-5 py-2 lg:py-2.5 text-sm lg:text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 transition-colors"
+            className="flex items-center gap-1.5 lg:gap-2 px-3 lg:px-6 py-2 lg:py-3 text-sm lg:text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 transition-colors"
             style={{ borderRadius: "10px" }}
           >
             <Phone className="w-4 h-4 lg:w-5 lg:h-5" />
@@ -113,7 +113,7 @@ const Header = () => {
           </a>
           <button
             onClick={openQuoteModal}
-            className="px-3 lg:px-5 py-2 lg:py-2.5 text-sm lg:text-base font-semibold hover:opacity-90 transition-opacity"
+            className="px-3 lg:px-6 py-2 lg:py-3 text-sm lg:text-base font-semibold hover:opacity-90 transition-opacity"
             style={{ backgroundColor: "#f59e0b", color: "#fff", borderRadius: "10px" }}
           >
             Get Free Quote
