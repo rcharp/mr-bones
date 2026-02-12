@@ -157,11 +157,30 @@
   50% { transform: translateY(-8px); }
 }
 
+/* Smooth image loading - fade in when loaded */
+img {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+img[src] {
+  opacity: 1;
+}
+
+/* Smooth iframe fade-in */
+.quote-iframe-fade {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.quote-iframe-fade.loaded {
+  opacity: 1;
+}
+
 /* Force form iframe visibility */
 #inline-P2loR2dW6LgPnGhKf4Px,
 #inline-UPF7Y8V1WfGW9dBEhSu1 {
   display: block !important;
-  opacity: 1 !important;
   visibility: visible !important;
   pointer-events: auto !important;
 }
