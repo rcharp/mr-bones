@@ -22,7 +22,7 @@ const TrustBadges = () => (
             transition={{ delay: i * 0.1 }}
             className="flex items-center gap-3"
           >
-            <badge.icon className="w-5 h-5 text-primary" />
+            <badge.icon className="w-5 h-5 text-secondary" />
             <span className="text-sm font-semibold text-foreground whitespace-nowrap">{badge.label}</span>
           </motion.div>
         ))}

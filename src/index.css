@@ -15,11 +15,11 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 20% 15%;
 
-    --primary: 217 91% 60%;
+    --primary: 222 47% 11%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 20% 95%;
-    --secondary-foreground: 220 20% 15%;
+    --secondary: 217 91% 60%;
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 220 14% 93%;
     --muted-foreground: 220 10% 46%;
@@ -74,6 +74,10 @@
   .text-gradient {
     @apply bg-clip-text text-transparent;
     background-image: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 45%));
+  }
+
+  .text-secondary-color {
+    color: hsl(217 91% 60%);
   }
 
   .text-accent-gradient {

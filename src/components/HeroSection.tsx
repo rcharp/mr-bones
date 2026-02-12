@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Star } from "lucide-react";
 import { motion } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
+import heroBg from "@/assets/hero-bg.png";
 
 const HeroSection = () => {
   const { openQuoteModal } = useQuoteModal();
@@ -17,8 +18,16 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="hero-gradient relative overflow-hidden">
-      <div className="container mx-auto px-4 lg:px-8 py-16 lg:py-24">
+    <section className="relative overflow-hidden">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBg})` }}
+      />
+      {/* Black Overlay */}
+      <div className="absolute inset-0 bg-black/70" />
+
+      <div className="container mx-auto px-4 lg:px-8 py-16 lg:py-24 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left Content */}
           <div className="space-y-8 lg:pt-8">
@@ -27,12 +36,12 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <h1 className="font-heading text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] tracking-tight text-foreground">
+              <h1 className="font-heading text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] tracking-tight text-primary-foreground">
                 Comfort You Can{" "}
                 <span className="text-gradient">Count On.</span>
                 <br />
                 Service You Can{" "}
-                <span className="text-accent-gradient">Trust.</span>
+                <span className="text-secondary-color">Trust.</span>
               </h1>
             </motion.div>
 
@@ -40,7 +49,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-lg text-muted-foreground max-w-lg leading-relaxed"
+              className="text-lg text-primary-foreground/70 max-w-lg leading-relaxed"
             >
               When your AC breaks down in July or your furnace fails in January, you need someone who shows up—fast. We're your neighbors, and we treat your home like our own.
             </motion.p>
@@ -56,7 +65,7 @@ const HeroSection = () => {
                 {[1, 2, 3, 4, 5].map((i) => (
                   <div
                     key={i}
-                    className="w-9 h-9 rounded-full bg-primary/20 border-2 border-card flex items-center justify-center text-xs font-bold text-primary"
+                    className="w-9 h-9 rounded-full bg-secondary/20 border-2 border-primary flex items-center justify-center text-xs font-bold text-secondary"
                   >
                     {String.fromCharCode(64 + i)}
                   </div>
@@ -68,7 +77,7 @@ const HeroSection = () => {
                     <Star key={i} className="w-4 h-4 fill-accent text-accent" />
                   ))}
                 </div>
-                <span className="text-sm text-muted-foreground">Trusted by 100+ happy customers!</span>
+                <span className="text-sm text-primary-foreground/70">Trusted by 100+ happy customers!</span>
               </div>
             </motion.div>
 
@@ -80,7 +89,7 @@ const HeroSection = () => {
               className="flex items-center gap-6 pt-2"
             >
               <div className="flex items-center gap-2">
-                <span className="text-sm font-semibold text-foreground">Google</span>
+                <span className="text-sm font-semibold text-primary-foreground">Google</span>
                 <div className="flex gap-0.5">
                   {[1, 2, 3, 4, 5].map((i) => (
                     <Star key={i} className="w-3.5 h-3.5 fill-accent text-accent" />
@@ -88,7 +97,7 @@ const HeroSection = () => {
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-sm font-semibold text-foreground">Facebook</span>
+                <span className="text-sm font-semibold text-primary-foreground">Facebook</span>
                 <div className="flex gap-0.5">
                   {[1, 2, 3, 4, 5].map((i) => (
                     <Star key={i} className="w-3.5 h-3.5 fill-accent text-accent" />

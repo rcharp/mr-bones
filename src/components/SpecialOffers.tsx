@@ -1,5 +1,6 @@
 import { Percent, CreditCard, Search } from "lucide-react";
 import { motion } from "framer-motion";
+import offersBg from "@/assets/offers-bg.png";
 
 const offers = [
   {
@@ -20,16 +21,23 @@ const offers = [
 ];
 
 const SpecialOffers = () => (
-  <section className="py-20 lg:py-28 section-gradient">
-    <div className="container mx-auto px-4 lg:px-8">
+  <section className="py-20 lg:py-28 relative overflow-hidden">
+    {/* Background Image */}
+    <div
+      className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${offersBg})` }}
+    />
+    <div className="absolute inset-0 bg-black/60" />
+
+    <div className="container mx-auto px-4 lg:px-8 relative z-10">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="text-center mb-16"
       >
-        <span className="text-sm font-semibold text-primary uppercase tracking-wider">Limited Time</span>
-        <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3">
+        <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Limited Time</span>
+        <h2 className="font-heading text-4xl lg:text-5xl font-bold text-primary-foreground mt-3">
           Special Offers & Benefits
         </h2>
       </motion.div>
@@ -42,13 +50,14 @@ const SpecialOffers = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.15 }}
-            className="bg-card rounded-2xl p-8 card-elevated border border-border text-center"
+            className="rounded-2xl p-8 card-elevated border border-secondary/30 text-center backdrop-blur-sm"
+            style={{ backgroundColor: "rgba(15, 23, 42, 0.8)" }}
           >
-            <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
-              <offer.icon className="w-7 h-7 text-primary" />
+            <div className="w-14 h-14 rounded-2xl bg-secondary/20 flex items-center justify-center mx-auto mb-6">
+              <offer.icon className="w-7 h-7 text-secondary" />
             </div>
-            <h3 className="font-heading text-lg font-bold text-foreground mb-3">{offer.title}</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">{offer.description}</p>
+            <h3 className="font-heading text-lg font-bold text-primary-foreground mb-3">{offer.title}</h3>
+            <p className="text-sm text-primary-foreground/70 leading-relaxed">{offer.description}</p>
           </motion.div>
         ))}
       </div>
