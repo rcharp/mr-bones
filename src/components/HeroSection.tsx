@@ -1,4 +1,4 @@
-import { Star } from "lucide-react";
+import { Star, ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
 import QuoteForm from "./QuoteForm";
@@ -113,6 +113,16 @@ const HeroSection = () => {
             className="w-full lg:w-[520px] lg:ml-auto"
           >
             <QuoteForm style={{ backgroundColor: "rgba(15, 23, 42, 0.6)" }} />
+          </motion.div>
+        </div>
+
+        {/* Mobile scroll indicator */}
+        <div className="lg:hidden flex justify-center pt-6 pb-2">
+          <motion.div
+            animate={{ y: [0, 8, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <ChevronDown className="w-8 h-8 text-primary-foreground/50" />
           </motion.div>
         </div>
       </div>
