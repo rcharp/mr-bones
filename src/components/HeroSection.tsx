@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
 import QuoteForm from "./QuoteForm";
 import heroBg from "@/assets/hero-bg.png";
+import palmettoTruck from "@/assets/palmetto-point-truck.png";
 import logo from "@/assets/logo.png";
 import reviewerImg1 from "@/assets/reviewers/reviewer-1.jpg";
 import reviewerImg2 from "@/assets/reviewers/reviewer-2.jpg";
@@ -13,7 +14,17 @@ const HeroSection = () => {
   const { openQuoteModal } = useQuoteModal();
 
   return (
+    <>
+      {/* Mobile truck image - between header and h1 */}
+      <div className="lg:hidden">
+        <img
+          src={palmettoTruck}
+          alt="Emmons Air truck and trailer at Palmetto Point"
+          className="w-full h-auto"
+        />
+      </div>
     <section className="relative overflow-hidden max-w-[100vw]">
+
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -118,6 +129,7 @@ const HeroSection = () => {
 
       </div>
     </section>
+    </>
   );
 };
 
