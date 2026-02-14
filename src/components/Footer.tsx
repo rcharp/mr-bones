@@ -8,15 +8,7 @@ const Footer = () => (
       <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
         {/* Brand */}
         <div className="space-y-4">
-          <img src={logo} alt="Emmons Air" className="w-full max-w-[300px] h-auto" />
-          <div className="flex items-center gap-4 pt-2">
-            <a href="https://www.facebook.com/p/Emmons-Air-LLC-61551350440167/" target="_blank" rel="noopener noreferrer" className="opacity-60 hover:opacity-100 transition-opacity text-base font-medium">
-              Facebook
-            </a>
-            <a href="https://share.google/W7fsLxWgOy8fWOhTQ" target="_blank" rel="noopener noreferrer" className="opacity-60 hover:opacity-100 transition-opacity text-base font-medium">
-              Google
-            </a>
-          </div>
+          <img src={logo} alt="Emmons Air" className="w-full max-w-[300px] h-auto mx-auto md:mx-0" />
         </div>
 
         {/* Business */}
@@ -28,6 +20,8 @@ const Footer = () => (
             <a href="/contact" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Contact</a>
             <a href="/review" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Review Us</a>
             <a href="/gallery" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Gallery</a>
+            <a href="https://www.facebook.com/p/Emmons-Air-LLC-61551350440167/" target="_blank" rel="noopener noreferrer" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Facebook</a>
+            <a href="https://share.google/W7fsLxWgOy8fWOhTQ" target="_blank" rel="noopener noreferrer" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Google</a>
           </nav>
         </div>
 
