@@ -81,7 +81,7 @@ className="relative w-full max-w-lg max-h-[85dvh] overflow-hidden flex flex-col"
                 <X className="w-5 h-5 text-foreground" />
               </button>
             )}
-            <div className="flex-1 overflow-hidden flex flex-col">
+            <div className="flex-1 overflow-y-auto overscroll-contain flex flex-col">
               <QuoteForm compact className="flex-1 flex flex-col justify-between" />
             </div>
           </div>
