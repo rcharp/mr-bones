@@ -83,9 +83,6 @@ const Footer = () => (
             Junie Systems
           </a>
         </p>
-        <div className="flex items-center gap-4">
-          <span className="text-base opacity-60">CAC1820932</span>
-        </div>
       </div>
     </div>
   </footer>
