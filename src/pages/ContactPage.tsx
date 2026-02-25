@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
-import { Phone, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import QuoteForm from "@/components/QuoteForm";
 import heroServices from "@/assets/hero-services.jpg";
 import useSEO from "@/hooks/useSEO";
@@ -72,6 +72,18 @@ const ContactPage = () => {
 
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center shrink-0">
+                      <Mail className="w-5 h-5 text-secondary" />
+                    </div>
+                    <div>
+                      <h3 className="font-heading font-semibold text-foreground mb-1">Email</h3>
+                      <a href="mailto:emmonsairllc@gmail.com" className="text-muted-foreground hover:text-secondary transition-colors">
+                        emmonsairllc@gmail.com
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center shrink-0">
                       <MapPin className="w-5 h-5 text-secondary" />
                     </div>
                     <div>
@@ -94,7 +106,7 @@ const ContactPage = () => {
                 {/* Map embed */}
                 <div className="rounded-2xl overflow-hidden border border-border shadow-md">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.5!2d-82.58!3d27.52!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z531 46th St W, Palmetto, FL 34221!5e0!3m2!1sen!2sus!4v1"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3537.235860983608!2d-82.57248938797551!3d27.555189576171195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c3197718acd711%3A0x5d1b29104c06ff28!2sEmmons!5e0!3m2!1sen!2sus!4v1770394947689!5m2!1sen!2sus"
                     width="100%"
                     height="250"
                     style={{ border: 0 }}
