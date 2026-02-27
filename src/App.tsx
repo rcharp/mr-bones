@@ -19,6 +19,8 @@ import GalleryPage from "./pages/GalleryPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import QuotePage from "./pages/QuotePage";
+import HVACTipsPage from "./pages/HVACTipsPage";
+import TipDetailPage from "./pages/TipDetailPage";
 import NotFound from "./pages/NotFound";
 
 
@@ -48,6 +50,8 @@ const App = () => (
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/tips" element={<HVACTipsPage />} />
+            <Route path="/tips/:slug" element={<TipDetailPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </QuoteModalProvider>

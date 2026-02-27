@@ -32,6 +32,7 @@ const navLinks = [
       { label: "About Us", href: "/about" },
       { label: "Get In Contact", href: "/contact" },
       { label: "Gallery", href: "/gallery" },
+      { label: "HVAC Tips", href: "/tips" },
     ],
   },
 ];
