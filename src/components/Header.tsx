@@ -32,7 +32,7 @@ const navLinks = [
     children: [
       { label: "About Us", href: "/about" },
       { label: "Get In Contact", href: "/contact" },
-      { label: "HVAC Tips", href: "/tips" },
+      { label: "Blog", href: "/tips" },
     ],
   },
 ];

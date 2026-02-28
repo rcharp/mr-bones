@@ -19,7 +19,7 @@ const Footer = () => (
             <a href="/about" className="block text-base opacity-80 hover:opacity-100 transition-opacity">About Us</a>
             <a href="/contact" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Contact</a>
             <a href="/gallery" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Gallery</a>
-            <a href="/tips" className="block text-base opacity-80 hover:opacity-100 transition-opacity">HVAC Tips</a>
+            <a href="/tips" className="block text-base opacity-80 hover:opacity-100 transition-opacity">Blog</a>
           </nav>
         </div>
 
