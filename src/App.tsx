@@ -1,8 +1,9 @@
+import { useEffect } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import { QuoteModalProvider } from "./components/QuoteModal";
 import Index from "./pages/Index";
 import ReviewPage from "./pages/ReviewPage";
@@ -23,11 +24,10 @@ import HVACTipsPage from "./pages/HVACTipsPage";
 import TipDetailPage from "./pages/TipDetailPage";
 import NotFound from "./pages/NotFound";
 
-
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
+const InternalAnchorRouter = () => {
+  const navigate = useNavigate();
     <TooltipProvider>
       <Toaster />
       <Sonner />
