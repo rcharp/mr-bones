@@ -1,8 +1,9 @@
+import { useEffect } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import { QuoteModalProvider } from "./components/QuoteModal";
 import Index from "./pages/Index";
 import ReviewPage from "./pages/ReviewPage";
@@ -23,20 +24,57 @@ import HVACTipsPage from "./pages/HVACTipsPage";
 import TipDetailPage from "./pages/TipDetailPage";
 import NotFound from "./pages/NotFound";
 
-
 const queryClient = new QueryClient();
+
+const InternalAnchorRouter = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleClick = (event: MouseEvent) => {
+      if (
+        event.defaultPrevented ||
+        event.button !== 0 ||
+        event.metaKey ||
+        event.altKey ||
+        event.ctrlKey ||
+        event.shiftKey
+      ) {
+        return;
+      }
+
+      const target = event.target as HTMLElement | null;
+      const anchor = target?.closest('a[href^="/"]') as HTMLAnchorElement | null;
+
+      if (!anchor) return;
+
+      const href = anchor.getAttribute("href");
+      if (!href || href.startsWith("//")) return;
+      if (anchor.target && anchor.target !== "_self") return;
+      if (anchor.hasAttribute("download")) return;
+
+      event.preventDefault();
+      navigate(href);
+    };
+
+    document.addEventListener("click", handleClick);
+    return () => document.removeEventListener("click", handleClick);
+  }, [navigate]);
+
+  return null;
+};
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '')}>
+      <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+        <InternalAnchorRouter />
         <QuoteModalProvider>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/quote" element={<QuotePage />} />
-            
+
             <Route path="/review" element={<ReviewPage />} />
             <Route path="/services/ac-repair" element={<ACRepairPage />} />
             <Route path="/services/ac-installation" element={<ACInstallationPage />} />
