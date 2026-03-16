@@ -1,5 +1,6 @@
 import { MapPin, Phone, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import aboutImg from "@/assets/gallery/grinder-action.jpg";
 
 const AboutSection = () => (
   <section id="about" className="py-20 lg:py-28">
@@ -55,18 +56,12 @@ const AboutSection = () => (
           className="relative"
         >
           <div className="rounded-2xl overflow-hidden shadow-2xl">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.5!2d-82.5155!3d27.2920!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDE3JzMxLjIiTiA4MsKwMzAnNTUuOCJX!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus&q=5725+Britannia+Dr,+Sarasota,+FL+34231"
-              width="100%"
-              height="450"
-              style={{ border: 0, maxWidth: "100%" }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="w-full"
-              title="Mr. Bones Stump Grinding Service Area"
-            />
-          </div>
+              <img
+                src={aboutImg}
+                alt="Mr. Bones stump grinder in action"
+                className="w-full h-full object-cover"
+              />
+            </div>
         </motion.div>
       </div>
     </div>
