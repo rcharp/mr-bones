@@ -27,6 +27,14 @@ import imgGrinderSideProfile from "@/assets/gallery/grinder-side-profile.jpg";
 import imgGrinderBridge2 from "@/assets/gallery/grinder-bridge-2.jpg";
 import imgGrinderGardenCut from "@/assets/gallery/grinder-garden-cut.jpg";
 import imgGrinderOpenField from "@/assets/gallery/grinder-open-field.jpg";
+import imgGrinderRoadsideStumps from "@/assets/gallery/grinder-roadside-stumps.jpg";
+import imgGrinderRoadsideCleanup from "@/assets/gallery/grinder-roadside-cleanup.jpg";
+import imgGrinderRoadworkSite from "@/assets/gallery/grinder-roadwork-site.jpg";
+import imgGrinderBackyardLargeStump from "@/assets/gallery/grinder-backyard-large-stump.jpg";
+import imgGrinderTrunkClose from "@/assets/gallery/grinder-trunk-close.jpg";
+import imgGrinderFenceLine from "@/assets/gallery/grinder-fence-line.jpg";
+import imgGrinderYardSide from "@/assets/gallery/grinder-yard-side.jpg";
+import imgTruckTrailerRig from "@/assets/gallery/truck-trailer-rig.jpg";
 
 const images = [
   { src: imgGrinderTruck, alt: "Mr. Bones grinder with truck on residential job" },
@@ -39,6 +47,14 @@ const images = [
   { src: imgGrinderRootsYard, alt: "Stump grinding with exposed roots in yard" },
   { src: imgGrinderWoods, alt: "Mr. Bones stump grinder in wooded property" },
   { src: imgGrinderSideProfile, alt: "Side profile of grinder working through mulch" },
+  { src: imgGrinderRoadsideStumps, alt: "Roadside project with multiple stumps and debris" },
+  { src: imgGrinderRoadsideCleanup, alt: "Roadside stump cleanup and grind work" },
+  { src: imgGrinderRoadworkSite, alt: "Roadwork-adjacent stump grinding site" },
+  { src: imgGrinderBackyardLargeStump, alt: "Large backyard stump before final grind" },
+  { src: imgGrinderTrunkClose, alt: "Close-up trunk grind with Mr. Bones grinder" },
+  { src: imgGrinderFenceLine, alt: "Fence-line stump removal project" },
+  { src: imgGrinderYardSide, alt: "Side-yard stump removal near landscaping" },
+  { src: imgTruckTrailerRig, alt: "Mr. Bones truck and trailer rig ready for service" },
   { src: imgGrinderCommercial, alt: "Commercial stump grinding job" },
   { src: imgGrinderRanch, alt: "Carlton grinder on ranch property" },
   { src: imgGrinderBridge, alt: "Stump grinding near bridge" },

@@ -7,12 +7,12 @@ import imgGrinderResidential from "@/assets/gallery/grinder-residential.jpg";
 import imgGrinderLongView from "@/assets/gallery/grinder-long-view.jpg";
 import imgGrinderTruck from "@/assets/gallery/grinder-truck.jpg";
 import imgGrinderBigStump from "@/assets/gallery/grinder-big-stump.jpg";
-import imgGrinderCommercial from "@/assets/gallery/grinder-commercial.jpg";
-import imgGrinderWoods from "@/assets/gallery/grinder-woods.jpg";
-import imgGrinderTrailer from "@/assets/gallery/grinder-trailer-setup.jpg";
-import imgGrinderAction from "@/assets/gallery/grinder-action.jpg";
+import imgGrinderRoadsideStumps from "@/assets/gallery/grinder-roadside-stumps.jpg";
+import imgGrinderRoadsideCleanup from "@/assets/gallery/grinder-roadside-cleanup.jpg";
+import imgGrinderBackyardLargeStump from "@/assets/gallery/grinder-backyard-large-stump.jpg";
+import imgGrinderYardSide from "@/assets/gallery/grinder-yard-side.jpg";
 
-const images = [imgGrinderTruck, imgGrinderBigStump, imgGrinderLongView, imgGrinderCommercial, imgGrinderField, imgGrinderWoods, imgGrinderTrailer, imgGrinderAction, imgGrinderResidential];
+const images = [imgGrinderTruck, imgGrinderBigStump, imgGrinderRoadsideStumps, imgGrinderBackyardLargeStump, imgGrinderField, imgGrinderRoadsideCleanup, imgGrinderYardSide, imgGrinderLongView, imgGrinderResidential];
 
 const GallerySection = () => (
   <section className="py-20 lg:py-28 section-gradient">
