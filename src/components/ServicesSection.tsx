@@ -1,8 +1,8 @@
 import { ArrowRight, Check } from "lucide-react";
 import { motion } from "framer-motion";
-import imgStumpGrinding from "@/assets/service-stump-grinding.jpg";
-import imgCommercial from "@/assets/service-commercial.jpg";
-import imgRootRemoval from "@/assets/service-root-removal.jpg";
+import imgStumpGrinding from "@/assets/gallery/job-site-6.jpg";
+import imgRootRemoval from "@/assets/gallery/job-site-7.jpg";
+import imgCommercial from "@/assets/gallery/job-site-3.jpg";
 import imgStormCleanup from "@/assets/service-storm-cleanup.jpg";
 
 const services = [

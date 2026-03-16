@@ -4,15 +4,15 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import imgGrinderField from "@/assets/gallery/grinder-field.jpg";
 import imgGrinderResidential from "@/assets/gallery/grinder-residential.jpg";
-import imgGrinderLongView from "@/assets/gallery/grinder-long-view.jpg";
 import imgGrinderTruck from "@/assets/gallery/grinder-truck.jpg";
 import imgGrinderBigStump from "@/assets/gallery/grinder-big-stump.jpg";
-import imgGrinderRoadsideStumps from "@/assets/gallery/grinder-roadside-stumps.jpg";
-import imgGrinderRoadsideCleanup from "@/assets/gallery/grinder-roadside-cleanup.jpg";
-import imgGrinderBackyardLargeStump from "@/assets/gallery/grinder-backyard-large-stump.jpg";
-import imgGrinderYardSide from "@/assets/gallery/grinder-yard-side.jpg";
+import imgGrinderAction from "@/assets/gallery/grinder-action.jpg";
+import imgJobSite3 from "@/assets/gallery/job-site-3.jpg";
+import imgJobSite6 from "@/assets/gallery/job-site-6.jpg";
+import imgJobSite7 from "@/assets/gallery/job-site-7.jpg";
+import imgJobSite8 from "@/assets/gallery/job-site-8.jpg";
 
-const images = [imgGrinderTruck, imgGrinderBigStump, imgGrinderRoadsideStumps, imgGrinderBackyardLargeStump, imgGrinderField, imgGrinderRoadsideCleanup, imgGrinderYardSide, imgGrinderLongView, imgGrinderResidential];
+const images = [imgGrinderTruck, imgJobSite6, imgGrinderBigStump, imgJobSite3, imgGrinderAction, imgJobSite7, imgGrinderField, imgJobSite8, imgGrinderResidential];
 
 const GallerySection = () => (
   <section className="py-20 lg:py-28 section-gradient">
