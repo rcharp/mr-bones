@@ -63,10 +63,10 @@ const AboutPage = () => {
                 <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Our Story</span>
                 <h2 className="font-heading text-3xl lg:text-4xl font-bold text-foreground uppercase">30+ Years of Experience</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Mr. Bones Stump Grinding has been serving Sarasota, Bradenton, and Venice for over 30 years. We specialize exclusively in stump grinding — it's what we do best.
+                  Founded by Troy, Mr. Bones Stump Grinding has been serving Sarasota, Bradenton, and Venice for over 30 years. We specialize exclusively in stump grinding — it's what we do best.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  With three stump grinders in our fleet, we have the right equipment for any job. From a single backyard stump to large commercial land clearing projects, we bring the same level of professionalism and care to every job.
+                  With three stump grinders in our fleet, Troy and his team have the right equipment for any job. From a single backyard stump to large commercial land clearing projects, we bring the same level of professionalism and care to every job.
                 </p>
               </motion.div>
             </div>
