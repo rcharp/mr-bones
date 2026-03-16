@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 
 const badges = [
   { icon: Shield, label: "Licensed & Insured" },
-  { icon: Clock, label: "12+ Years of Experience" },
-  { icon: Phone, label: "24/7 Availability" },
-  { icon: Star, label: "5-Star Google Rating" },
+  { icon: Clock, label: "30+ Years Experience" },
+  { icon: Phone, label: "Same-Day Service" },
+  { icon: Star, label: "5-Star Rated" },
   { icon: ThumbsUp, label: "Satisfaction Guaranteed" },
 ];
 

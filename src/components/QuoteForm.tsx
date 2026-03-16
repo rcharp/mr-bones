@@ -1,23 +1,15 @@
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
-import icon from "@/assets/icon.png";
-
-const WEBHOOK_URL =
-  "https://services.leadconnectorhq.com/hooks/7IdpxAjxnevjhuMotlbS/webhook-trigger/15fdedb0-33ba-4fd1-97d7-bbaaf08d87ed";
+import logo from "@/assets/logo.png";
 
 interface QuoteFormProps {
-  /** Show the icon + heading at the top */
   showHeader?: boolean;
-  /** Use compact layout (less padding/spacing) for modals */
   compact?: boolean;
-  /** Extra className on the outer wrapper */
   className?: string;
-  /** Override inline styles (bg, border, opacity, etc.) */
   style?: React.CSSProperties;
 }
 
@@ -28,8 +20,6 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
     fullName: "",
     phone: "",
     helpWith: "",
-    consentMarketing: false,
-    consentNonMarketing: false,
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -43,26 +33,12 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
       toast.error("Please enter a valid 10-digit phone number.");
       return;
     }
-    if (!formData.consentMarketing || !formData.consentNonMarketing) {
-      toast.error("Please accept both consent checkboxes.");
-      return;
-    }
 
     setIsSubmitting(true);
 
+    // Simulate form submission (replace with actual webhook when ready)
     try {
-      await fetch(WEBHOOK_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          full_name: formData.fullName.trim(),
-          phone: formData.phone.trim(),
-          help_with: formData.helpWith.trim(),
-          consent_marketing: formData.consentMarketing,
-          consent_non_marketing: formData.consentNonMarketing,
-        }),
-      });
-
+      await new Promise(resolve => setTimeout(resolve, 1000));
       setIsSubmitted(true);
     } catch {
       toast.error("Something went wrong. Please try again or call us.");
@@ -76,12 +52,12 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
       <div
         className={`rounded-2xl border-2 ${compact ? 'p-5' : 'p-8'} shadow-2xl flex flex-col items-center justify-center text-center ${compact ? 'min-h-[300px]' : 'min-h-[400px]'} ${className}`}
         style={{
-          backgroundColor: "#0f172a",
-          borderColor: "#3b82f6",
+          backgroundColor: "#1a1a1a",
+          borderColor: "hsl(25 95% 53%)",
           ...style,
         }}
       >
-        <h2 className="font-heading font-bold text-white text-3xl mb-4">THANK YOU!</h2>
+        <h2 className="font-heading font-bold text-white text-3xl mb-4 uppercase">THANK YOU!</h2>
         <p className="text-white/80 text-lg">We got your request and will be in touch shortly!</p>
       </div>
     );
@@ -92,21 +68,20 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
       onSubmit={handleSubmit}
       className={`rounded-2xl border-2 ${compact ? 'p-5 space-y-3' : 'p-8 space-y-6'} shadow-2xl ${className}`}
       style={{
-        backgroundColor: "#0f172a",
-        borderColor: "#3b82f6",
+        backgroundColor: "#1a1a1a",
+        borderColor: "hsl(25 95% 53%)",
         ...style,
       }}
     >
       {showHeader && (
         <div className={`text-center ${compact ? 'space-y-2 pb-1' : 'space-y-3 pb-2'}`}>
-          <img src={icon} alt="Emmons Air" className="w-16 h-16 mx-auto" />
-          <h2 className={`font-heading font-bold text-white ${compact ? 'text-2xl mt-1' : 'text-2xl'}`}>
-            Get a Free Quote
+          <img src={logo} alt="Mr. Bones Stump Grinding" className="w-16 h-16 mx-auto" />
+          <h2 className={`font-heading font-bold text-white ${compact ? 'text-2xl mt-1' : 'text-2xl'} uppercase`}>
+            Free Estimate
           </h2>
         </div>
       )}
 
-      {/* Full Name */}
       <div className={compact ? "space-y-1" : "space-y-2"}>
         <Label htmlFor="fullName" className="text-white font-semibold">
           Full Name <span className="text-secondary">*</span>
@@ -122,7 +97,6 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
         />
       </div>
 
-      {/* Phone */}
       <div className={compact ? "space-y-1" : "space-y-2"}>
         <Label htmlFor="phone" className="text-white font-semibold">
           Phone <span className="text-secondary">*</span>
@@ -131,7 +105,7 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
           id="phone"
           type="tel"
           inputMode="numeric"
-          placeholder="(888) 123-4567"
+          placeholder="(941) 123-4567"
           maxLength={10}
           value={formData.phone}
           onChange={(e) => {
@@ -142,14 +116,13 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
         />
       </div>
 
-      {/* What do you need help with? */}
       <div className={compact ? "space-y-1" : "space-y-2"}>
         <Label htmlFor="helpWith" className="text-white font-semibold">
-          What do you need help with? <span className="text-secondary">*</span>
+          Tell us about the job <span className="text-secondary">*</span>
         </Label>
         <Textarea
           id="helpWith"
-          placeholder="Your message goes straight to my phone, so I'll be able to get back to you ASAP!"
+          placeholder="How many stumps? How big? Any access issues? We'll get back to you ASAP!"
           required
           maxLength={1000}
           rows={compact ? 2 : 4}
@@ -159,57 +132,13 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
         />
       </div>
 
-      {/* Marketing Consent */}
-      <div className="flex items-start gap-3">
-        <Checkbox
-          id="consentMarketing"
-          checked={formData.consentMarketing}
-          onCheckedChange={(checked) =>
-            setFormData({ ...formData, consentMarketing: checked === true })
-          }
-          className="mt-1 border-white/30 data-[state=checked]:bg-secondary data-[state=checked]:border-secondary"
-        />
-        <Label
-          htmlFor="consentMarketing"
-          className="text-white/70 text-xs leading-relaxed font-normal cursor-pointer"
-        >
-          I consent to receive marketing text messages from Emmons Air LLC at the
-          phone number provided. Consent is not a condition of purchase. Message
-          frequency may vary. Message &amp; data rates may apply. Text HELP for
-          assistance, reply STOP to opt out.
-        </Label>
-      </div>
-
-      {/* Non-Marketing Consent */}
-      <div className="flex items-start gap-3">
-        <Checkbox
-          id="consentNonMarketing"
-          checked={formData.consentNonMarketing}
-          onCheckedChange={(checked) =>
-            setFormData({ ...formData, consentNonMarketing: checked === true })
-          }
-          className="mt-1 border-white/30 data-[state=checked]:bg-secondary data-[state=checked]:border-secondary"
-        />
-        <Label
-          htmlFor="consentNonMarketing"
-          className="text-white/70 text-xs leading-relaxed font-normal cursor-pointer"
-        >
-          I consent to receive non-marketing text messages from Emmons Air LLC
-          regarding appointment confirmations and reminders, customer support
-          updates, and service-related follow-ups at the phone number provided.
-          Consent is not a condition of purchase. Message frequency may vary.
-          Message &amp; data rates may apply. Text HELP for assistance, reply STOP
-          to opt out.
-        </Label>
-      </div>
-
       <Button
         type="submit"
         disabled={isSubmitting}
-        className={`w-full font-bold ${compact ? 'text-base py-4' : 'text-lg py-6'} hover:opacity-90 transition-opacity`}
-        style={{ backgroundColor: "#f59e0b", color: "#fff", borderRadius: "10px" }}
+        className={`w-full font-bold ${compact ? 'text-base py-4' : 'text-lg py-6'} bg-secondary text-secondary-foreground hover:opacity-90 transition-opacity`}
+        style={{ borderRadius: "10px" }}
       >
-        {isSubmitting ? "Sending..." : "Get Free Quote"}
+        {isSubmitting ? "Sending..." : "Get Free Estimate"}
       </Button>
     </form>
   );

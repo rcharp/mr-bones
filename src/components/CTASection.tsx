@@ -14,28 +14,28 @@ const CTASection = () => {
           viewport={{ once: true }}
           className="max-w-3xl mx-auto text-center space-y-8"
         >
-          <span className="text-base font-semibold text-primary uppercase tracking-wider">Get Started</span>
-          <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground">
-            Ready to get started?
+          <span className="text-base font-semibold text-secondary uppercase tracking-wider">Get Started</span>
+          <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground uppercase">
+            Ready to Remove That Stump?
           </h2>
           <p className="text-lg text-muted-foreground">
-            We're Here When You Need Us. Call us or request a free quote today.
+            Call us today for a free estimate. No stump is too big or too small.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="tel:+18445201313"
+              href="tel:+19417802579"
               className="inline-flex items-center gap-2 px-8 py-4 bg-secondary text-secondary-foreground font-semibold hover:opacity-90 transition-opacity"
               style={{ borderRadius: "10px" }}
             >
               <Phone className="w-5 h-5" />
-              (844) 520-1313
+              (941) 780-2579
             </a>
             <button
               onClick={openQuoteModal}
-              className="inline-flex items-center gap-2 px-8 py-4 font-semibold hover:opacity-90 transition-opacity"
-              style={{ backgroundColor: "#f59e0b", color: "#fff", borderRadius: "10px" }}
+              className="inline-flex items-center gap-2 px-8 py-4 font-semibold border-2 border-foreground text-foreground hover:bg-foreground hover:text-background transition-colors"
+              style={{ borderRadius: "10px" }}
             >
-              Get Free Quote
+              Get Free Estimate
             </button>
           </div>
         </motion.div>
