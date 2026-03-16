@@ -90,7 +90,7 @@ const ServiceAreaPage = ({ city, tagline, intro }: ServiceAreaPageProps) => {
                   className="px-8 py-3 font-semibold bg-secondary text-secondary-foreground hover:opacity-90 transition-opacity"
                   style={{ borderRadius: "10px" }}
                 >
-                  Free Estimate
+                  Get Free Quote
                 </button>
               </div>
             </motion.div>
@@ -172,7 +172,7 @@ const ServiceAreaPage = ({ city, tagline, intro }: ServiceAreaPageProps) => {
                 className="px-8 py-3 font-semibold bg-secondary text-secondary-foreground hover:opacity-90 transition-opacity"
                 style={{ borderRadius: "10px" }}
               >
-                Free Estimate
+                Get Free Quote
               </button>
             </div>
           </div>

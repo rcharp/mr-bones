@@ -47,7 +47,7 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
                   className="px-8 py-3 font-semibold bg-secondary text-secondary-foreground hover:opacity-90 transition-opacity"
                   style={{ borderRadius: "10px" }}
                 >
-                  Free Estimate
+                  Get Free Quote
                 </button>
               </div>
             </motion.div>
@@ -178,7 +178,7 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
                 className="px-8 py-3 font-semibold bg-secondary text-secondary-foreground hover:opacity-90 transition-opacity"
                 style={{ borderRadius: "10px" }}
               >
-                Free Estimate
+                Get Free Quote
               </button>
             </div>
           </div>
