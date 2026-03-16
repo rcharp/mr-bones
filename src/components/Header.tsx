@@ -46,11 +46,8 @@ const Header = () => {
     <header className="sticky top-0 z-50 border-b border-secondary/20 max-w-[100vw]" style={{ backgroundColor: "#1a1a1a" }}>
       <div className="container mx-auto flex items-center justify-between py-3 px-4 lg:px-8 max-w-[100vw]">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-3 shrink-0 mr-2 lg:mr-4">
+        <a href="/" className="shrink-0 mr-2 lg:mr-4">
           <img src={logo} alt="Mr. Bones Stump Grinding" className="h-[150px] w-auto" />
-          <span className="hidden lg:block font-heading text-xl font-bold text-primary-foreground uppercase tracking-wide">
-            Mr. Bones<br /><span className="text-secondary text-sm">Stump Grinding</span>
-          </span>
         </a>
 
         {/* Desktop Nav */}
