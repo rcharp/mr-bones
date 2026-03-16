@@ -42,7 +42,7 @@ const Slider = ({ before, after, label }: BeforeAfterPair) => {
     <div className="space-y-3">
       <div
         ref={containerRef}
-        className="relative aspect-[4/3] rounded-xl overflow-hidden cursor-ew-resize select-none touch-none"
+        className="relative aspect-[3/2] rounded-xl overflow-hidden cursor-ew-resize select-none touch-none"
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}
