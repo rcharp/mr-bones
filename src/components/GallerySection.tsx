@@ -6,10 +6,13 @@ import imgGrinderField from "@/assets/gallery/grinder-field.jpg";
 import imgGrinderResidential from "@/assets/gallery/grinder-residential.jpg";
 import imgGrinderPark from "@/assets/gallery/grinder-park.jpg";
 import imgGrinderTruck from "@/assets/gallery/grinder-truck.jpg";
-import imgGrinderTruck2 from "@/assets/gallery/grinder-truck-2.jpg";
-import imgBigOrSmall from "@/assets/gallery/big-or-small-promo.jpg";
+import imgGrinderBigStump from "@/assets/gallery/grinder-big-stump.jpg";
+import imgGrinderCommercial from "@/assets/gallery/grinder-commercial.jpg";
+import imgGrinderCondo from "@/assets/gallery/grinder-condo.jpg";
+import imgGrinderTrailer from "@/assets/gallery/grinder-trailer-setup.jpg";
+import imgStumpBefore from "@/assets/gallery/stump-before.jpg";
 
-const images = [imgGrinderTruck, imgGrinderResidential, imgGrinderField, imgGrinderPark, imgGrinderTruck2, imgBigOrSmall];
+const images = [imgGrinderTruck, imgGrinderBigStump, imgGrinderResidential, imgGrinderCommercial, imgGrinderField, imgGrinderCondo, imgGrinderTrailer, imgStumpBefore, imgGrinderPark];
 
 const GallerySection = () => (
   <section className="py-20 lg:py-28 section-gradient">
