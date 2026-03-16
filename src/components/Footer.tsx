@@ -7,13 +7,7 @@ const Footer = () => (
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
         {/* Brand */}
         <div className="space-y-4">
-          <div className="flex items-center gap-3">
-            <img src={logo} alt="Mr. Bones Stump Grinding" className="w-20 h-20 rounded-full object-cover" />
-            <div>
-              <div className="font-heading text-xl font-bold uppercase">Mr. Bones</div>
-              <div className="text-secondary text-sm font-heading uppercase">Stump Grinding</div>
-            </div>
-          </div>
+          <img src={logo} alt="Mr. Bones Stump Grinding" className="w-20 h-20 rounded-full object-cover" />
           <p className="text-sm text-primary-foreground/60 leading-relaxed">
             Serving Sarasota, Bradenton & Venice for over 30 years. Professional stump grinding you can count on.
           </p>
