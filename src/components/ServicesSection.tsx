@@ -1,9 +1,9 @@
 import { ArrowRight, Check } from "lucide-react";
 import { motion } from "framer-motion";
-import imgStumpGrinding from "@/assets/gallery/job-site-6.jpg";
-import imgRootRemoval from "@/assets/gallery/job-site-7.jpg";
-import imgCommercial from "@/assets/gallery/job-site-3.jpg";
-import imgStormCleanup from "@/assets/service-storm-cleanup.jpg";
+import imgStumpGrinding from "@/assets/gallery/grinder-action.jpg";
+import imgRootRemoval from "@/assets/gallery/grinder-roots-yard.jpg";
+import imgCommercial from "@/assets/gallery/grinder-open-field.jpg";
+import imgStormCleanup from "@/assets/gallery/grinder-roadside-stumps.jpg";
 
 const services = [
   {
