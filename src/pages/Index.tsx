@@ -12,27 +12,27 @@ import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import useSEO from "@/hooks/useSEO";
 
-import imgJobSite1 from "@/assets/gallery/job-site-1.jpg";
-import imgJobSite2 from "@/assets/gallery/job-site-2.jpg";
-import imgJobSite4 from "@/assets/gallery/job-site-4.jpg";
-import imgJobSite5 from "@/assets/gallery/job-site-5.jpg";
-import imgJobSite9 from "@/assets/gallery/job-site-9.jpg";
-import imgJobSite10 from "@/assets/gallery/job-site-10.jpg";
+import imgStumpBefore from "@/assets/gallery/stump-before.jpg";
+import imgGrinderField from "@/assets/gallery/grinder-field.jpg";
+import imgGrinderBigStump from "@/assets/gallery/grinder-big-stump.jpg";
+import imgGrinderPark from "@/assets/gallery/grinder-park.jpg";
+import imgGrinderBackyardLargeStump from "@/assets/gallery/grinder-backyard-large-stump.jpg";
+import imgGrinderRoadsideCleanup from "@/assets/gallery/grinder-roadside-cleanup.jpg";
 
 const beforeAfterPairs = [
   {
-    before: imgJobSite1,
-    after: imgJobSite2,
-    label: "Residential stump removal — Sarasota",
+    before: imgStumpBefore,
+    after: imgGrinderField,
+    label: "Large oak stump — Sarasota",
   },
   {
-    before: imgJobSite4,
-    after: imgJobSite5,
-    label: "Large oak stump — Bradenton",
+    before: imgGrinderBigStump,
+    after: imgGrinderPark,
+    label: "Tropical garden stump — Bradenton",
   },
   {
-    before: imgJobSite9,
-    after: imgJobSite10,
+    before: imgGrinderBackyardLargeStump,
+    after: imgGrinderRoadsideCleanup,
     label: "Backyard stump grinding — Venice",
   },
 ];
@@ -52,10 +52,10 @@ const Index = () => {
         <TrustBadges />
         <SpecialOffers />
         <TestimonialsSection />
-        <BeforeAfterSlider pairs={beforeAfterPairs} />
         <ServicesSection />
         <AboutSection />
         <GallerySection />
+        <BeforeAfterSlider pairs={beforeAfterPairs} />
         <FAQSection />
         <CTASection />
       </main>

@@ -19,12 +19,12 @@ const CTASection = () => {
             Ready to Remove That Stump?
           </h2>
           <p className="text-lg text-muted-foreground">
-            Call us today for a free estimate. No stump is too big or too small.
+            Call us today for a free quote. No stump is too big or too small.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="tel:+19417802579"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-secondary text-secondary-foreground font-semibold hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-2 px-8 py-4 font-semibold border-2 border-secondary text-secondary bg-transparent hover:bg-secondary/10 transition-colors"
               style={{ borderRadius: "10px" }}
             >
               <Phone className="w-5 h-5" />
@@ -32,7 +32,7 @@ const CTASection = () => {
             </a>
             <button
               onClick={openQuoteModal}
-              className="inline-flex items-center gap-2 px-8 py-4 font-semibold border-2 border-foreground text-foreground hover:bg-foreground hover:text-background transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-4 font-semibold bg-secondary text-secondary-foreground hover:opacity-90 transition-opacity"
               style={{ borderRadius: "10px" }}
             >
               Get Free Quote

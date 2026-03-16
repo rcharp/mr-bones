@@ -4,6 +4,10 @@ import { useQuoteModal } from "./QuoteModal";
 import QuoteForm from "./QuoteForm";
 import heroBg from "@/assets/gallery/job-site-8.jpg";
 import truckImg from "@/assets/gallery/grinder-truck.jpg";
+import reviewer1 from "@/assets/reviewers/reviewer-1.jpg";
+import reviewer2 from "@/assets/reviewers/reviewer-2.jpg";
+import reviewer3 from "@/assets/reviewers/reviewer-3.jpg";
+import reviewer4 from "@/assets/reviewers/reviewer-4.jpg";
 
 const HeroSection = () => {
   const { openQuoteModal } = useQuoteModal();
@@ -48,13 +52,23 @@ const HeroSection = () => {
                 <strong>Mr. Bones Stump Grinding</strong> has been serving Sarasota, Bradenton, and Venice for over 30 years. With three stump grinders, we have the right equipment for any job — big or small. Fast, professional, and affordable.
               </motion.p>
 
-              {/* Social Proof */}
+              {/* Social Proof with reviewer photos */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="flex flex-wrap items-center gap-3"
+                className="flex flex-wrap items-center gap-4"
               >
+                <div className="flex -space-x-3">
+                  {[reviewer1, reviewer2, reviewer3, reviewer4].map((img, i) => (
+                    <img
+                      key={i}
+                      src={img}
+                      alt="Happy customer"
+                      className="w-10 h-10 rounded-full border-2 border-primary-foreground/30 object-cover"
+                    />
+                  ))}
+                </div>
                 <div className="flex items-center gap-2">
                   <div className="flex items-center gap-0.5">
                     {[1, 2, 3, 4, 5].map((i) => (
