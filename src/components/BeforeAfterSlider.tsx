@@ -58,13 +58,12 @@ const Slider = ({ before, after, label }: BeforeAfterPair) => {
         {/* Before (clipped) */}
         <div
           className="absolute inset-0 overflow-hidden"
-          style={{ width: `${position}%` }}
+          style={{ clipPath: `inset(0 ${100 - position}% 0 0)` }}
         >
           <img
             src={before}
             alt="Before stump grinding"
             className="absolute inset-0 w-full h-full object-cover"
-            style={{ width: `${containerRef.current?.offsetWidth || 0}px`, maxWidth: "none" }}
             draggable={false}
           />
         </div>
