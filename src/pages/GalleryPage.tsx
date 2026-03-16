@@ -35,26 +35,46 @@ import imgGrinderTrunkClose from "@/assets/gallery/grinder-trunk-close.jpg";
 import imgGrinderFenceLine from "@/assets/gallery/grinder-fence-line.jpg";
 import imgGrinderYardSide from "@/assets/gallery/grinder-yard-side.jpg";
 import imgTruckTrailerRig from "@/assets/gallery/truck-trailer-rig.jpg";
+import imgJobSite1 from "@/assets/gallery/job-site-1.jpg";
+import imgJobSite2 from "@/assets/gallery/job-site-2.jpg";
+import imgJobSite3 from "@/assets/gallery/job-site-3.jpg";
+import imgJobSite4 from "@/assets/gallery/job-site-4.jpg";
+import imgJobSite5 from "@/assets/gallery/job-site-5.jpg";
+import imgJobSite6 from "@/assets/gallery/job-site-6.jpg";
+import imgJobSite7 from "@/assets/gallery/job-site-7.jpg";
+import imgJobSite8 from "@/assets/gallery/job-site-8.jpg";
+import imgJobSite9 from "@/assets/gallery/job-site-9.jpg";
+import imgJobSite10 from "@/assets/gallery/job-site-10.jpg";
 
 const images = [
+  { src: imgJobSite6, alt: "Mr. Bones stump grinding on recent job site" },
   { src: imgGrinderTruck, alt: "Mr. Bones grinder with truck on residential job" },
+  { src: imgJobSite3, alt: "Stump grinding project — new upload" },
   { src: imgGrinderBigStump, alt: "Large stump grinding in tropical garden" },
+  { src: imgJobSite7, alt: "Root removal and stump grinding work" },
   { src: imgGrinderAction, alt: "Mr. Bones grinder in action on oak stump" },
+  { src: imgJobSite8, alt: "Mr. Bones grinder on job — wide shot" },
   { src: imgGrinderResidential, alt: "Stump grinding at residential property" },
+  { src: imgJobSite1, alt: "Before — stump ready for grinding" },
+  { src: imgJobSite2, alt: "After — clean yard post grind" },
   { src: imgGrinderFerns, alt: "Mr. Bones grinder near fern garden" },
   { src: imgGrinderHillside, alt: "Stump grinding on hillside property" },
+  { src: imgJobSite4, alt: "Large stump before removal" },
+  { src: imgJobSite5, alt: "Clean result after stump grinding" },
   { src: imgGrinderLongView, alt: "Long-view shot of grinder on residential lot" },
   { src: imgGrinderRootsYard, alt: "Stump grinding with exposed roots in yard" },
+  { src: imgJobSite9, alt: "Backyard stump before grinding" },
+  { src: imgJobSite10, alt: "Backyard stump after grinding" },
   { src: imgGrinderWoods, alt: "Mr. Bones stump grinder in wooded property" },
   { src: imgGrinderSideProfile, alt: "Side profile of grinder working through mulch" },
-  { src: imgGrinderRoadsideStumps, alt: "Roadside project with multiple stumps and debris" },
+  { src: imgGrinderRoadsideStumps, alt: "Roadside project with multiple stumps" },
   { src: imgGrinderRoadsideCleanup, alt: "Roadside stump cleanup and grind work" },
   { src: imgGrinderRoadworkSite, alt: "Roadwork-adjacent stump grinding site" },
   { src: imgGrinderBackyardLargeStump, alt: "Large backyard stump before final grind" },
   { src: imgGrinderTrunkClose, alt: "Close-up trunk grind with Mr. Bones grinder" },
   { src: imgGrinderFenceLine, alt: "Fence-line stump removal project" },
   { src: imgGrinderYardSide, alt: "Side-yard stump removal near landscaping" },
-  { src: imgTruckTrailerRig, alt: "Mr. Bones truck and trailer rig ready for service" },
+  { src: imgTruckTrailerRig, alt: "Mr. Bones truck and trailer rig" },
   { src: imgGrinderCommercial, alt: "Commercial stump grinding job" },
   { src: imgGrinderRanch, alt: "Carlton grinder on ranch property" },
   { src: imgGrinderBridge, alt: "Stump grinding near bridge" },
@@ -105,7 +125,7 @@ const GalleryPage = () => {
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  transition={{ delay: i * 0.06 }}
+                  transition={{ delay: i * 0.04 }}
                   className="rounded-xl overflow-hidden group cursor-pointer aspect-[4/3]"
                 >
                   <img
