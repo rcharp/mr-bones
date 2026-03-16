@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Phone, Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-circle.png";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -47,7 +47,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between py-3 px-4 lg:px-8 max-w-[100vw]">
         {/* Logo */}
         <a href="/" className="shrink-0 mr-2 lg:mr-4">
-          <img src={logo} alt="Mr. Bones Stump Grinding" className="h-[150px] w-auto" />
+          <img src={logo} alt="Mr. Bones Stump Grinding" className="h-[150px] w-[150px] rounded-full object-cover" />
         </a>
 
         {/* Desktop Nav */}
