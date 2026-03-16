@@ -2,14 +2,14 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import imgStumpGrinding from "@/assets/service-stump-grinding.jpg";
-import imgCommercial from "@/assets/service-commercial.jpg";
-import imgRootRemoval from "@/assets/service-root-removal.jpg";
-import imgStormCleanup from "@/assets/service-storm-cleanup.jpg";
-import heroBg from "@/assets/hero-bg.png";
-import truckImg from "@/assets/palmetto-point-truck.png";
+import imgGrinderField from "@/assets/gallery/grinder-field.jpg";
+import imgGrinderResidential from "@/assets/gallery/grinder-residential.jpg";
+import imgGrinderPark from "@/assets/gallery/grinder-park.jpg";
+import imgGrinderTruck from "@/assets/gallery/grinder-truck.jpg";
+import imgGrinderTruck2 from "@/assets/gallery/grinder-truck-2.jpg";
+import imgBigOrSmall from "@/assets/gallery/big-or-small-promo.jpg";
 
-const images = [imgStumpGrinding, imgCommercial, imgRootRemoval, imgStormCleanup, heroBg, truckImg];
+const images = [imgGrinderTruck, imgGrinderResidential, imgGrinderField, imgGrinderPark, imgGrinderTruck2, imgBigOrSmall];
 
 const GallerySection = () => (
   <section className="py-20 lg:py-28 section-gradient">

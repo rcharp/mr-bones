@@ -2,8 +2,8 @@ import { Star } from "lucide-react";
 import { motion } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
 import QuoteForm from "./QuoteForm";
-import heroBg from "@/assets/hero-bg.png";
-import truckImg from "@/assets/palmetto-point-truck.png";
+import heroBg from "@/assets/hero-bg.jpg";
+import truckImg from "@/assets/gallery/grinder-truck.jpg";
 
 const HeroSection = () => {
   const { openQuoteModal } = useQuoteModal();
