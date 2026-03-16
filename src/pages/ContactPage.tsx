@@ -91,7 +91,7 @@ const ContactPage = () => {
 
                 <div className="rounded-2xl overflow-hidden border border-border shadow-md">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113204.8085685706!2d-82.57!3d27.34!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c34024e3a0c539%3A0x67a51bebc6c8b3c0!2sSarasota%2C%20FL!5e0!3m2!1sen!2sus!4v1770394947689!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.5!2d-82.5155!3d27.2920!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDE3JzMxLjIiTiA4MsKwMzAnNTUuOCJX!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus&q=5725+Britannia+Dr,+Sarasota,+FL+34231"
                     width="100%"
                     height="250"
                     style={{ border: 0 }}
