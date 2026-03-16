@@ -3,7 +3,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "sonner";
 import logo from "@/assets/logo-circle.png";
 
@@ -17,8 +16,8 @@ interface QuoteFormProps {
 const QuoteForm = ({ showHeader = true, compact = false, className = "", style }: QuoteFormProps) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [consentContact, setConsentContact] = useState(false);
-  const [consentTerms, setConsentTerms] = useState(false);
+  const [consentMarketing, setConsentMarketing] = useState(false);
+  const [consentService, setConsentService] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",
     phone: "",
@@ -36,8 +35,8 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
       toast.error("Please enter a valid 10-digit phone number.");
       return;
     }
-    if (!consentContact || !consentTerms) {
-      toast.error("Please agree to both consent checkboxes.");
+    if (!consentMarketing && !consentService) {
+      toast.error("Please agree to at least one consent option.");
       return;
     }
 
@@ -72,7 +71,7 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
   return (
     <form
       onSubmit={handleSubmit}
-      className={`rounded-2xl border-2 ${compact ? 'p-5 space-y-3' : 'p-8 space-y-6'} shadow-2xl ${className}`}
+      className={`rounded-2xl border-2 ${compact ? 'p-5 space-y-4' : 'p-8 space-y-5'} shadow-2xl ${className}`}
       style={{
         backgroundColor: "#1a1a1a",
         borderColor: "hsl(25 95% 53%)",
@@ -84,7 +83,7 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
           <img
             src={logo}
             alt="Mr. Bones Stump Grinding"
-            className="w-20 h-20 mx-auto rounded-full object-cover"
+            className="w-16 h-16 mx-auto rounded-full object-cover"
           />
           <h2 className={`font-heading font-bold text-white ${compact ? 'text-2xl mt-1' : 'text-2xl'} uppercase`}>
             Get a Free Quote
@@ -103,7 +102,7 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
           maxLength={100}
           value={formData.fullName}
           onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-          className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
+          className="bg-white/10 border-white/20 text-white placeholder:text-white/50 h-12"
         />
       </div>
 
@@ -122,50 +121,53 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
             const digits = e.target.value.replace(/\D/g, "").slice(0, 10);
             setFormData({ ...formData, phone: digits });
           }}
-          className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
+          className="bg-white/10 border-white/20 text-white placeholder:text-white/50 h-12"
         />
       </div>
 
       <div className={compact ? "space-y-1" : "space-y-2"}>
         <Label htmlFor="helpWith" className="text-white font-semibold">
-          Tell us about the job <span className="text-secondary">*</span>
+          What do you need help with? <span className="text-secondary">*</span>
         </Label>
         <Textarea
           id="helpWith"
-          placeholder="How many stumps? How big? Any access issues? We'll get back to you ASAP!"
+          placeholder="Your message goes straight to my phone, so I'll be able to get back to you ASAP!"
           required
           maxLength={1000}
-          rows={compact ? 2 : 4}
+          rows={compact ? 3 : 4}
           value={formData.helpWith}
           onChange={(e) => setFormData({ ...formData, helpWith: e.target.value })}
           className="bg-white/10 border-white/20 text-white placeholder:text-white/50 resize-none"
         />
       </div>
 
-      {/* Consent checkboxes */}
-      <div className="space-y-3">
-        <div className="flex items-start gap-3">
-          <Checkbox
-            id="consentContact"
-            checked={consentContact}
-            onCheckedChange={(checked) => setConsentContact(checked === true)}
-            className="mt-0.5 border-white/40 data-[state=checked]:bg-secondary data-[state=checked]:border-secondary"
-          />
-          <Label htmlFor="consentContact" className="text-white/70 text-sm leading-snug cursor-pointer">
-            I consent to being contacted by Mr. Bones Stump Grinding via phone or text regarding my quote request.
-          </Label>
-        </div>
-        <div className="flex items-start gap-3">
-          <Checkbox
-            id="consentTerms"
-            checked={consentTerms}
-            onCheckedChange={(checked) => setConsentTerms(checked === true)}
-            className="mt-0.5 border-white/40 data-[state=checked]:bg-secondary data-[state=checked]:border-secondary"
-          />
-          <Label htmlFor="consentTerms" className="text-white/70 text-sm leading-snug cursor-pointer">
-            I agree to the terms of service and privacy policy.
-          </Label>
-        </div>
+      {/* Consent radio-style options */}
+      <div className="space-y-4 pt-1">
+        <button
+          type="button"
+          onClick={() => setConsentMarketing(!consentMarketing)}
+          className="flex items-start gap-3 text-left w-full group"
+        >
+          <span className={`mt-1 w-5 h-5 rounded-full border-2 shrink-0 flex items-center justify-center transition-colors ${consentMarketing ? 'border-secondary bg-secondary' : 'border-white/40'}`}>
+            {consentMarketing && <span className="w-2 h-2 rounded-full bg-white" />}
+          </span>
+          <span className="text-white/70 text-sm leading-relaxed">
+            I consent to receive marketing text messages from Mr. Bones Stump Grinding LLC at the phone number provided. Consent is not a condition of purchase. Message frequency may vary. Message & data rates may apply. Text HELP for assistance, reply STOP to opt out.
+          </span>
+        </button>
+
+        <button
+          type="button"
+          onClick={() => setConsentService(!consentService)}
+          className="flex items-start gap-3 text-left w-full group"
+        >
+          <span className={`mt-1 w-5 h-5 rounded-full border-2 shrink-0 flex items-center justify-center transition-colors ${consentService ? 'border-secondary bg-secondary' : 'border-white/40'}`}>
+            {consentService && <span className="w-2 h-2 rounded-full bg-white" />}
+          </span>
+          <span className="text-white/70 text-sm leading-relaxed">
+            I consent to receive non-marketing text messages from Mr. Bones Stump Grinding LLC regarding appointment confirmations and reminders, customer support updates, and service-related follow-ups at the phone number provided. Consent is not a condition of purchase. Message frequency may vary. Message & data rates may apply. Text HELP for assistance, reply STOP to opt out.
+          </span>
+        </button>
       </div>
 
       <Button
