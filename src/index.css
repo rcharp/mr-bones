@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -51,7 +51,7 @@
     --sidebar-ring: 25 95% 53%;
 
     --font-heading: 'Oswald', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
   }
 }
 
