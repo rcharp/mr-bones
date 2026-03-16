@@ -9,21 +9,37 @@ const testimonials = [
     text: "Mr. Bones came out and ground three stumps in my backyard in under two hours. Very professional, fair price, and left the yard looking great. I've been recommending him to everyone in my neighborhood.",
     name: "Mike R.",
     rating: 5,
+    source: "Google",
   },
   {
     text: "Had a huge oak stump that another company said was too big. Mr. Bones showed up with the right equipment and knocked it out no problem. 30 years of experience really shows. Highly recommend!",
     name: "Sarah T.",
     rating: 5,
+    source: "Google",
   },
   {
     text: "After Hurricane Ian, we had multiple stumps that needed grinding. Mr. Bones was responsive, showed up when he said he would, and his prices were very fair. Will definitely use again.",
     name: "James L.",
     rating: 5,
+    source: "Google",
   },
   {
     text: "Fast, professional, and affordable. What more could you ask for? Mr. Bones ground down 5 stumps on our commercial property and did a fantastic job. The area was clean when he left.",
     name: "Karen D.",
     rating: 5,
+    source: "Facebook",
+  },
+  {
+    text: "Called Mr. Bones for a same-day estimate and he was out within hours. Ground the stump down below grade and cleaned up everything. Best price I found in the area. Highly recommend!",
+    name: "David M.",
+    rating: 5,
+    source: "Google",
+  },
+  {
+    text: "We had six palm stumps and two oak stumps removed. Mr. Bones handled it all in one visit. Very experienced, you can tell he's been doing this a long time. Will call again for sure.",
+    name: "Linda W.",
+    rating: 5,
+    source: "Google",
   },
 ];
 
