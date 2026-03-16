@@ -47,7 +47,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between py-3 px-4 lg:px-8 max-w-[100vw]">
         {/* Logo */}
         <a href="/" className="shrink-0 mr-2 lg:mr-4">
-          <img src={logo} alt="Mr. Bones Stump Grinding" className="h-[200px] w-[200px] rounded-full object-cover" />
+          <img src={logo} alt="Mr. Bones Stump Grinding" className="h-[200px] w-[200px] rounded-full object-cover border border-white/80" style={{ objectPosition: 'center', transform: 'scale(1.15)' }} />
         </a>
 
         {/* Desktop Nav */}
