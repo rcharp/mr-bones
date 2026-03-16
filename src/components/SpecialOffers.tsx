@@ -1,7 +1,7 @@
 import { Percent, TreePine, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
-import heroBg from "@/assets/hero-bg.png";
+import heroBg from "@/assets/gallery/grinder-residential.jpg";
 
 const offers = [
   {
