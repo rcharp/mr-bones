@@ -3,27 +3,26 @@ import { Phone, Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
 import logo from "@/assets/logo.png";
-import icon from "@/assets/icon.png";
 
 const navLinks = [
   { label: "Home", href: "/" },
   {
     label: "Services",
     children: [
-      { label: "AC Repair", href: "/services/ac-repair" },
-      { label: "AC Installation", href: "/services/ac-installation" },
-      { label: "AC Maintenance", href: "/services/ac-maintenance" },
-      { label: "Duct Cleaning", href: "/services/duct-cleaning" },
+      { label: "Stump Grinding", href: "/services/stump-grinding" },
+      { label: "Root Removal", href: "/services/root-removal" },
+      { label: "Land Clearing", href: "/services/land-clearing" },
+      { label: "Storm Cleanup", href: "/services/storm-cleanup" },
     ],
   },
   {
     label: "Service Areas",
     children: [
-      { label: "Palmetto, FL", href: "/areas/palmetto" },
-      { label: "Memphis, FL", href: "/areas/memphis" },
+      { label: "Sarasota, FL", href: "/areas/sarasota" },
       { label: "Bradenton, FL", href: "/areas/bradenton" },
-      { label: "Ellenton, FL", href: "/areas/ellenton" },
-      { label: "Palma Sola, FL", href: "/areas/palma-sola" },
+      { label: "Venice, FL", href: "/areas/venice" },
+      { label: "Palmetto, FL", href: "/areas/palmetto" },
+      { label: "North Port, FL", href: "/areas/north-port" },
     ],
   },
   { label: "Gallery", href: "/gallery" },
@@ -44,12 +43,14 @@ const Header = () => {
   const { openQuoteModal } = useQuoteModal();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-secondary/20 max-w-[100vw]" style={{ backgroundColor: "#0f172a" }}>
-      <div className="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8 max-w-[100vw]">
+    <header className="sticky top-0 z-50 border-b border-secondary/20 max-w-[100vw]" style={{ backgroundColor: "#1a1a1a" }}>
+      <div className="container mx-auto flex items-center justify-between py-3 px-4 lg:px-8 max-w-[100vw]">
         {/* Logo */}
         <a href="/" className="flex items-center gap-3 shrink-0 mr-2 lg:mr-4">
-          <img src={icon} alt="Emmons Air icon" className="w-8 h-8 sm:w-10 sm:h-10 lg:hidden" width={40} height={40} />
-          <img src={logo} alt="Emmons Air" className="hidden lg:block" style={{ width: "351px", height: "auto" }} />
+          <img src={logo} alt="Mr. Bones Stump Grinding" className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16" />
+          <span className="hidden lg:block font-heading text-xl font-bold text-primary-foreground uppercase tracking-wide">
+            Mr. Bones<br /><span className="text-secondary text-sm">Stump Grinding</span>
+          </span>
         </a>
 
         {/* Desktop Nav */}
@@ -74,13 +75,13 @@ const Header = () => {
                       exit={{ opacity: 0, y: 8 }}
                       transition={{ duration: 0.15 }}
                       className="absolute top-full left-0 mt-1 z-50 rounded-xl shadow-lg border border-border py-2 min-w-[200px]"
-                      style={{ backgroundColor: "#0f172a" }}
+                      style={{ backgroundColor: "#1a1a1a" }}
                     >
                       {link.children.map((child) => (
                         <a
                           key={child.label}
                           href={child.href}
-                          className="block px-4 py-2.5 text-base text-primary-foreground/70 hover:text-primary-foreground hover:bg-secondary/10 transition-colors"
+                          className="block px-4 py-2.5 text-base text-primary-foreground/70 hover:text-secondary hover:bg-secondary/10 transition-colors"
                         >
                           {child.label}
                         </a>
@@ -105,19 +106,19 @@ const Header = () => {
         <div className="flex items-center flex-1 lg:flex-none min-w-0">
           <div className="flex items-center justify-center gap-3 flex-1 lg:flex-none lg:justify-end">
             <a
-              href="tel:+18445201313"
+              href="tel:+19417802579"
               className="flex items-center gap-1 sm:gap-1.5 lg:gap-2 px-2 sm:px-3 lg:px-6 py-2.5 sm:py-2.5 lg:py-3 text-xs sm:text-sm lg:text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 transition-colors whitespace-nowrap"
               style={{ borderRadius: "10px" }}
             >
               <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 lg:w-5 lg:h-5 shrink-0" />
-              (844) 520-1313
+              (941) 780-2579
             </a>
             <button
               onClick={openQuoteModal}
-              className="px-2 sm:px-3 lg:px-6 py-2.5 sm:py-2.5 lg:py-3 text-xs sm:text-sm lg:text-base font-semibold hover:opacity-90 transition-opacity whitespace-nowrap"
-              style={{ backgroundColor: "#f59e0b", color: "#fff", borderRadius: "10px" }}
+              className="px-2 sm:px-3 lg:px-6 py-2.5 sm:py-2.5 lg:py-3 text-xs sm:text-sm lg:text-base font-semibold bg-secondary text-secondary-foreground hover:opacity-90 transition-opacity whitespace-nowrap"
+              style={{ borderRadius: "10px" }}
             >
-              Get Free Quote
+              Free Estimate
             </button>
           </div>
 
@@ -139,7 +140,7 @@ const Header = () => {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             className="lg:hidden overflow-hidden border-t border-secondary/20"
-            style={{ backgroundColor: "#0f172a" }}
+            style={{ backgroundColor: "#1a1a1a" }}
           >
             <div className="px-4 py-6 space-y-4">
               {navLinks.map((link) =>
@@ -170,7 +171,7 @@ const Header = () => {
                               key={child.label}
                               href={child.href}
                               onClick={() => { setMobileOpen(false); setMobileDropdown(null); }}
-                              className="block pl-4 py-2 text-base text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+                              className="block pl-4 py-2 text-base text-primary-foreground/70 hover:text-secondary transition-colors"
                             >
                               {child.label}
                             </a>
@@ -192,18 +193,18 @@ const Header = () => {
               )}
               <div className="pt-4 space-y-3 border-t border-secondary/20">
                 <a
-                  href="tel:+18445201313"
+                  href="tel:+19417802579"
                   className="flex items-center justify-center gap-2 w-full text-center px-6 py-3 text-sm font-semibold border border-secondary text-secondary"
                   style={{ borderRadius: "10px" }}
                 >
-                  <Phone className="w-5 h-5" /> (844) 520-1313
+                  <Phone className="w-5 h-5" /> (941) 780-2579
                 </a>
                 <button
                   onClick={() => { setMobileOpen(false); openQuoteModal(); }}
-                  className="block w-full text-center px-6 py-3 text-sm font-semibold"
-                  style={{ backgroundColor: "#f59e0b", color: "#fff", borderRadius: "10px" }}
+                  className="block w-full text-center px-6 py-3 text-sm font-semibold bg-secondary text-secondary-foreground"
+                  style={{ borderRadius: "10px" }}
                 >
-                  Get Free Quote
+                  Free Estimate
                 </button>
               </div>
             </div>

@@ -8,33 +8,33 @@ import {
 
 const faqs = [
   {
-    q: "How quickly can you respond to an emergency AC repair?",
-    a: "We offer same-day service for emergency air conditioning repairs throughout Palmetto, Bradenton, Sarasota, and Manatee County. When your AC breaks down during Florida's heat, we understand it's urgent. Call us and we'll get a certified technician to your home as quickly as possible.",
+    q: "How much does stump grinding cost?",
+    a: "The cost depends on the size, location, and number of stumps. We offer free estimates — just give us a call at (941) 780-2579 and we'll come out to assess your job and give you a fair, upfront price.",
   },
   {
-    q: "Do you offer financing options for AC installation and repairs?",
-    a: "Yes! We offer flexible financing plans with quick approval to help you get the comfort you need without breaking your budget. Whether you need a major repair or a complete system replacement, our financing options make it affordable.",
+    q: "How long does stump grinding take?",
+    a: "Most residential stumps can be ground in 30 minutes to 2 hours depending on size. Larger stumps or multiple stumps may take longer. We work efficiently to minimize disruption to your property.",
   },
   {
-    q: "Do you provide free estimates for AC installation?",
-    a: "Yes! We provide free, no-obligation estimates for all air conditioning installations and system replacements. We'll assess your home's cooling needs, discuss your options, and provide upfront, transparent pricing with no hidden fees.",
+    q: "What happens to the wood chips after grinding?",
+    a: "The grinding process creates mulch from the stump. We can leave the mulch in the hole for it to decompose naturally, spread it around your yard, or haul it away — whatever you prefer.",
   },
   {
-    q: "Are your technicians licensed and insured?",
-    a: "All Emmons Air technicians are fully licensed, certified, and insured to protect you and your property. Our team undergoes continuous training to stay current with the latest HVAC technology and best practices.",
+    q: "How deep do you grind stumps?",
+    a: "We typically grind 6-12 inches below grade, which is deep enough for replanting grass, laying sod, or planting a new tree. If you need deeper grinding for construction purposes, just let us know.",
   },
   {
-    q: "What areas do you service?",
-    a: "We proudly serve Palmetto, Bradenton, Sarasota, and all of Manatee County. As a locally owned and operated family business with over 12 years in the area, we're invested in our community.",
+    q: "Can you grind stumps near structures or fences?",
+    a: "Yes! With three different stump grinders, we have the right equipment for tight spaces, near fences, next to foundations, and even in backyards with limited access.",
   },
   {
-    q: "Do you offer warranties on your work?",
-    a: "Yes, we stand behind all our work with warranties on both parts and labor. New AC installations come with comprehensive manufacturer warranties, and we provide additional warranty coverage on our workmanship.",
+    q: "What areas do you serve?",
+    a: "We serve Sarasota, Bradenton, Venice, Palmetto, North Port, and surrounding areas throughout Sarasota and Manatee counties. We've been serving this area for over 30 years.",
   },
 ];
 
 const FAQSection = () => (
-  <section className="py-20 lg:py-28" style={{ backgroundColor: "#0f172a" }}>
+  <section className="py-20 lg:py-28" style={{ backgroundColor: "#1a1a1a" }}>
     <div className="container mx-auto px-4 lg:px-8 max-w-3xl">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -43,7 +43,7 @@ const FAQSection = () => (
         className="text-center mb-16"
       >
         <span className="text-base font-semibold text-secondary uppercase tracking-wider">Still Not Sure?</span>
-        <h2 className="font-heading text-4xl lg:text-5xl font-bold text-primary-foreground mt-3">
+        <h2 className="font-heading text-4xl lg:text-5xl font-bold text-primary-foreground mt-3 uppercase">
           Frequently Asked Questions
         </h2>
         <p className="text-primary-foreground/70 mt-4">What else would you like to know?</p>

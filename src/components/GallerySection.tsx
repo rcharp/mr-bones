@@ -2,14 +2,14 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import img1 from "@/assets/gallery/goodman-new-install.jpg";
-import img2 from "@/assets/gallery/emmons-team.png";
-import img3 from "@/assets/gallery/air-handler-closet.jpg";
-import img4 from "@/assets/gallery/fleet-trucks.png";
-import img5 from "@/assets/gallery/goodman-dual-units.jpg";
-import img6 from "@/assets/gallery/owner-with-units.png";
+import imgStumpGrinding from "@/assets/service-stump-grinding.jpg";
+import imgCommercial from "@/assets/service-commercial.jpg";
+import imgRootRemoval from "@/assets/service-root-removal.jpg";
+import imgStormCleanup from "@/assets/service-storm-cleanup.jpg";
+import heroBg from "@/assets/hero-bg.png";
+import truckImg from "@/assets/palmetto-point-truck.png";
 
-const images = [img1, img2, img3, img4, img5, img6];
+const images = [imgStumpGrinding, imgCommercial, imgRootRemoval, imgStormCleanup, heroBg, truckImg];
 
 const GallerySection = () => (
   <section className="py-20 lg:py-28 section-gradient">
@@ -20,8 +20,8 @@ const GallerySection = () => (
         viewport={{ once: true }}
         className="text-center mb-16"
       >
-        <span className="text-base font-semibold text-primary uppercase tracking-wider">Our Work</span>
-        <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3">
+        <span className="text-base font-semibold text-secondary uppercase tracking-wider">Our Work</span>
+        <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3 uppercase">
           See Us In Action
         </h2>
       </motion.div>
@@ -38,7 +38,7 @@ const GallerySection = () => (
           >
             <img
               src={img}
-              alt={`HVAC work ${i + 1}`}
+              alt={`Stump grinding project ${i + 1}`}
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
             />
           </motion.div>

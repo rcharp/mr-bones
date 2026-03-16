@@ -2,27 +2,27 @@ import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState, useCallback, useEffect } from "react";
 
-const GOOGLE_REVIEW_URL = "https://share.google/W7fsLxWgOy8fWOhTQ";
+const FACEBOOK_URL = "https://www.facebook.com/mr.bonesstump/";
 
 const testimonials = [
   {
-    text: "David the owner has been out to my house several times to help diagnose and fix issues with my AC. He's always easily accessible which is important, and even better he's honest and knowledgeable. We also have him do annual maintenance for us. I wouldn't trust anyone else with keeping my house Cool.",
-    name: "Mitchell S.",
+    text: "Mr. Bones came out and ground three stumps in my backyard in under two hours. Very professional, fair price, and left the yard looking great. I've been recommending him to everyone in my neighborhood.",
+    name: "Mike R.",
     rating: 5,
   },
   {
-    text: "David came out today to service our unit. He came out and discovered that our fan had been running non stop because the modular was bad. He got the parts needed the same day and made all repairs. He also cleaned dust and mold from the unit for us. He was very thorough and knowledgeable. We will call him for AC needs.",
-    name: "Jessica O.",
+    text: "Had a huge oak stump that another company said was too big. Mr. Bones showed up with the right equipment and knocked it out no problem. 30 years of experience really shows. Highly recommend!",
+    name: "Sarah T.",
     rating: 5,
   },
   {
-    text: "I have lived in Florida for over 30 years. I have had many different companies for AC service and support. The very best is Emmons Air. Dave is amazing and exhibits the highest level of customer service I have ever experienced in the AC industry. You would be making a great decision to meet with Dave and see how he can help you.",
-    name: "Jeff K.",
+    text: "After Hurricane Ian, we had multiple stumps that needed grinding. Mr. Bones was responsive, showed up when he said he would, and his prices were very fair. Will definitely use again.",
+    name: "James L.",
     rating: 5,
   },
   {
-    text: "I had an issue with my a/c unit and heard about Emmons air through a friend. I called David (Owner) and he was quick to come out, diagnose, and fix my issue. David was very professional and very accommodating. Would highly recommend his business to anyone with a/c issues big or small.",
-    name: "Jeremy P.",
+    text: "Fast, professional, and affordable. What more could you ask for? Mr. Bones ground down 5 stumps on our commercial property and did a fantastic job. The area was clean when he left.",
+    name: "Karen D.",
     rating: 5,
   },
 ];
@@ -34,7 +34,6 @@ const TestimonialsSection = () => {
   const next = useCallback(() => setCurrent((c) => (c + 1) % total), [total]);
   const prev = useCallback(() => setCurrent((c) => (c - 1 + total) % total), [total]);
 
-  // Auto-advance every 6 seconds
   useEffect(() => {
     const interval = setInterval(next, 6000);
     return () => clearInterval(interval);
@@ -50,25 +49,19 @@ const TestimonialsSection = () => {
           className="text-center mb-16"
         >
           <span className="text-base font-semibold text-secondary uppercase tracking-wider">Testimonials</span>
-          <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3">
-            What Our Customers Are Saying
+          <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3 uppercase">
+            What Our Customers Say
           </h2>
           <div className="flex items-center justify-center gap-2 mt-4">
-            <img
-              src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
-              alt="Google"
-              className="h-5"
-            />
             <div className="flex gap-0.5">
               {[1, 2, 3, 4, 5].map((s) => (
-                <Star key={s} className="w-4 h-4 fill-accent text-accent" />
+                <Star key={s} className="w-4 h-4 fill-secondary text-secondary" />
               ))}
             </div>
-            <span className="text-base text-muted-foreground font-medium">5.0 Rating</span>
+            <span className="text-base text-muted-foreground font-medium">5-Star Rated</span>
           </div>
         </motion.div>
 
-        {/* Carousel */}
         <div className="max-w-3xl mx-auto relative">
           <div className="overflow-hidden">
             <motion.div
@@ -82,7 +75,7 @@ const TestimonialsSection = () => {
               <Quote className="w-10 h-10 text-secondary/15 absolute top-8 right-8" />
               <div className="flex gap-0.5 mb-5">
                 {Array.from({ length: testimonials[current].rating }).map((_, s) => (
-                  <Star key={s} className="w-5 h-5 fill-accent text-accent" />
+                  <Star key={s} className="w-5 h-5 fill-secondary text-secondary" />
                 ))}
               </div>
               <p className="text-foreground text-lg leading-relaxed mb-8">
@@ -94,13 +87,12 @@ const TestimonialsSection = () => {
                 </div>
                 <div>
                   <div className="font-heading font-semibold text-foreground">{testimonials[current].name}</div>
-                  <div className="text-sm text-muted-foreground">Google Review</div>
+                  <div className="text-sm text-muted-foreground">Verified Customer</div>
                 </div>
               </div>
             </motion.div>
           </div>
 
-          {/* Navigation */}
           <div className="flex items-center justify-between mt-8">
             <div className="flex gap-2">
               <button
@@ -117,7 +109,6 @@ const TestimonialsSection = () => {
               </button>
             </div>
 
-            {/* Dots */}
             <div className="flex gap-2">
               {testimonials.map((_, i) => (
                 <button
@@ -131,7 +122,7 @@ const TestimonialsSection = () => {
             </div>
 
             <a
-              href={GOOGLE_REVIEW_URL}
+              href={FACEBOOK_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="text-base font-semibold text-secondary hover:underline"

@@ -3,16 +3,16 @@ import useSEO from "@/hooks/useSEO";
 
 const PalmettoPage = () => {
   useSEO({
-    title: "HVAC Services Palmetto FL | AC Repair & Install | Emmons Air",
-    description: "Trusted HVAC services in Palmetto FL. AC repair, installation, maintenance & duct cleaning. Family owned, licensed & insured. Call (844) 520-1313.",
-    canonical: "https://emmonsair.com/areas/palmetto",
+    title: "Stump Grinding Palmetto FL | Mr. Bones | Free Estimates",
+    description: "Professional stump grinding in Palmetto FL. 30+ years experience, licensed & insured. Call (941) 780-2579 for a free estimate.",
+    canonical: "https://mrbonesstumpgrinding.com/areas/palmetto",
   });
 
   return (
     <ServiceAreaPage
       city="Palmetto, FL"
-      tagline="Your Trusted HVAC Partner"
-      intro="At Emmons Air, we offer reliable and professional HVAC services in Palmetto, FL. Whether you need heating, cooling, or ventilation services, our experienced technicians are ready to assist you with installations, repairs, and maintenance."
+      tagline="Your Trusted Stump Grinding Experts"
+      intro="Mr. Bones Stump Grinding provides professional stump grinding services in Palmetto and throughout Manatee County. Over 30 years of experience you can count on."
     />
   );
 };

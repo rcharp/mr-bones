@@ -1,53 +1,53 @@
 import { ArrowRight, Check } from "lucide-react";
 import { motion } from "framer-motion";
-import heroRepair from "@/assets/service-repair-stock.jpg";
-import heroInstall from "@/assets/service-install-stock.jpg";
-import serviceMaintenance from "@/assets/service-maintenance-stock.jpg";
-import serviceDuct from "@/assets/service-duct-stock.jpg";
+import imgStumpGrinding from "@/assets/service-stump-grinding.jpg";
+import imgCommercial from "@/assets/service-commercial.jpg";
+import imgRootRemoval from "@/assets/service-root-removal.jpg";
+import imgStormCleanup from "@/assets/service-storm-cleanup.jpg";
 
 const services = [
   {
-    image: heroRepair,
-    title: "AC Repair",
-    href: "/services/ac-repair",
+    image: imgStumpGrinding,
+    title: "Stump Grinding",
+    href: "/services/stump-grinding",
     features: [
-      "Fast response for quick repairs",
-      "Expert diagnosis of any issue",
-      "Upfront pricing—no surprises",
-      "Same-day emergency service available",
+      "Residential & commercial stumps of any size",
+      "Below-grade grinding for replanting",
+      "Clean mulch left behind or hauled away",
+      "Same-day service available",
     ],
   },
   {
-    image: heroInstall,
-    title: "AC Installation",
-    href: "/services/ac-installation",
+    image: imgRootRemoval,
+    title: "Root Removal",
+    href: "/services/root-removal",
     features: [
-      "Residential AC Installation",
-      "Energy-efficient systems to reduce costs",
-      "Proper sizing for optimal performance",
-      "Replacements and Upgrades",
+      "Surface root grinding",
+      "Prevent sidewalk and driveway damage",
+      "Protect foundations and plumbing",
+      "Complete root system removal",
     ],
   },
   {
-    image: serviceMaintenance,
-    title: "AC Maintenance",
-    href: "/services/ac-maintenance",
+    image: imgCommercial,
+    title: "Land Clearing",
+    href: "/services/land-clearing",
     features: [
-      "Prevent costly breakdowns",
-      "Lower your utility bills",
-      "Extend system lifespan",
-      "Priority scheduling available",
+      "Lot clearing for new construction",
+      "Multiple stump removal projects",
+      "Commercial property clearing",
+      "Volume discounts available",
     ],
   },
   {
-    image: serviceDuct,
-    title: "Duct Cleaning",
-    href: "/services/duct-cleaning",
+    image: imgStormCleanup,
+    title: "Storm Cleanup",
+    href: "/services/storm-cleanup",
     features: [
-      "Remove dust, allergens, and contaminants",
-      "Improve airflow and efficiency",
-      "Reduce allergy and respiratory issues",
-      "Complete vent and ductwork cleaning",
+      "Post-hurricane stump removal",
+      "Emergency response available",
+      "Fallen tree stump grinding",
+      "Property restoration support",
     ],
   },
 ];
@@ -61,12 +61,12 @@ const ServicesSection = () => (
         viewport={{ once: true }}
         className="text-center mb-16"
       >
-        <span className="text-base font-semibold text-primary uppercase tracking-wider">What We Do</span>
-        <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3">
-          Homeowners in Palmetto, Bradenton and Sarasota Trust Us
+        <span className="text-base font-semibold text-secondary uppercase tracking-wider">What We Do</span>
+        <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground mt-3 uppercase">
+          Professional Stump Grinding Services
         </h2>
         <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-          Complete HVAC solutions for your home comfort needs.
+          Over 30 years of experience serving Sarasota, Bradenton & Venice.
         </p>
       </motion.div>
 
@@ -79,7 +79,7 @@ const ServicesSection = () => (
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
             className="rounded-2xl overflow-hidden card-elevated border border-secondary/30 group"
-            style={{ backgroundColor: "#0f172a" }}
+            style={{ backgroundColor: "#1a1a1a" }}
           >
             <a href={service.href} className="block aspect-[16/9] overflow-hidden cursor-pointer">
               <img
@@ -89,7 +89,7 @@ const ServicesSection = () => (
               />
             </a>
             <div className="p-8">
-              <h3 className="font-heading text-2xl font-bold text-primary-foreground mb-4">{service.title}</h3>
+              <h3 className="font-heading text-2xl font-bold text-primary-foreground mb-4 uppercase">{service.title}</h3>
               <ul className="space-y-3 mb-6">
                 {service.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3 text-base text-primary-foreground/80">

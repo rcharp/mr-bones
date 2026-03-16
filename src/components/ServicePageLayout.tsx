@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import heroServices from "@/assets/hero-services.jpg";
 import { useQuoteModal } from "@/components/QuoteModal";
 
-
 interface ServicePageProps {
   title: string;
   subtitle: string;
@@ -21,7 +20,6 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        {/* Hero */}
         <section className="relative overflow-hidden bg-black">
           <img
             src={heroServices}
@@ -33,30 +31,29 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
           <div className="container mx-auto px-4 lg:px-8 py-20 lg:py-32 relative z-10 text-center">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
               <span className="text-sm font-semibold text-secondary uppercase tracking-wider">{subtitle}</span>
-              <h1 className="font-heading text-4xl lg:text-6xl font-bold text-primary-foreground mt-3">{title}</h1>
+              <h1 className="font-heading text-4xl lg:text-6xl font-bold text-primary-foreground mt-3 uppercase">{title}</h1>
               <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto mt-6 leading-relaxed">{intro}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
                 <a
-                   href="tel:+18445201313"
+                  href="tel:+19417802579"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 transition-colors"
                   style={{ borderRadius: "10px" }}
                 >
                   <Phone className="w-5 h-5" />
-                  (844) 520-1313
+                  (941) 780-2579
                 </a>
                 <button
                   onClick={openQuoteModal}
-                  className="px-8 py-3 font-semibold hover:opacity-90 transition-opacity"
-                  style={{ backgroundColor: "#f59e0b", color: "#fff", borderRadius: "10px" }}
+                  className="px-8 py-3 font-semibold bg-secondary text-secondary-foreground hover:opacity-90 transition-opacity"
+                  style={{ borderRadius: "10px" }}
                 >
-                  Get Free Quote
+                  Free Estimate
                 </button>
               </div>
             </motion.div>
           </div>
         </section>
 
-        {/* Content Sections */}
         <section className="py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             {sections.map((section, i) => (
@@ -68,7 +65,7 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
                 transition={{ delay: i * 0.1 }}
                 className="mb-12"
               >
-                <h2 className="font-heading text-2xl lg:text-3xl font-bold text-foreground mb-4">{section.heading}</h2>
+                <h2 className="font-heading text-2xl lg:text-3xl font-bold text-foreground mb-4 uppercase">{section.heading}</h2>
                 {Array.isArray(section.content) ? (
                   <ul className="space-y-3">
                     {section.content.map((item, j) => (
@@ -90,9 +87,9 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 className="rounded-2xl p-8 lg:p-10 border border-secondary/30"
-                style={{ backgroundColor: "#0f172a" }}
+                style={{ backgroundColor: "#1a1a1a" }}
               >
-                <h2 className="font-heading text-2xl lg:text-3xl font-bold text-primary-foreground mb-6">{benefits.heading}</h2>
+                <h2 className="font-heading text-2xl lg:text-3xl font-bold text-primary-foreground mb-6 uppercase">{benefits.heading}</h2>
                 <ul className="space-y-4">
                   {benefits.items.map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-primary-foreground/80">
@@ -109,13 +106,13 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
         {/* Related Services */}
         <section className="py-16 lg:py-20">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
-            <h2 className="font-heading text-2xl lg:text-3xl font-bold text-foreground mb-8 text-center">Explore Our Other Services</h2>
+            <h2 className="font-heading text-2xl lg:text-3xl font-bold text-foreground mb-8 text-center uppercase">Explore Our Other Services</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {[
-                { label: "AC Repair", href: "/services/ac-repair" },
-                { label: "AC Installation", href: "/services/ac-installation" },
-                { label: "AC Maintenance", href: "/services/ac-maintenance" },
-                { label: "Duct Cleaning", href: "/services/duct-cleaning" },
+                { label: "Stump Grinding", href: "/services/stump-grinding" },
+                { label: "Root Removal", href: "/services/root-removal" },
+                { label: "Land Clearing", href: "/services/land-clearing" },
+                { label: "Storm Cleanup", href: "/services/storm-cleanup" },
               ].map((s) => (
                 <a
                   key={s.href}
@@ -136,17 +133,17 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
               <MapPin className="w-5 h-5 text-secondary" />
               <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Areas We Serve</span>
             </div>
-            <h2 className="font-heading text-2xl lg:text-3xl font-bold text-foreground mb-6">Proudly Serving Manatee County</h2>
+            <h2 className="font-heading text-2xl lg:text-3xl font-bold text-foreground mb-6 uppercase">Serving Sarasota & Manatee Counties</h2>
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-              We provide expert HVAC services throughout the greater Palmetto and Bradenton area. <a href="/about" className="text-secondary hover:underline">Learn more about our team</a>.
+              We provide professional stump grinding throughout the greater Sarasota and Bradenton area.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                { label: "Palmetto, FL", href: "/areas/palmetto" },
+                { label: "Sarasota, FL", href: "/areas/sarasota" },
                 { label: "Bradenton, FL", href: "/areas/bradenton" },
-                { label: "Memphis, FL", href: "/areas/memphis" },
-                { label: "Ellenton, FL", href: "/areas/ellenton" },
-                { label: "Palma Sola, FL", href: "/areas/palma-sola" },
+                { label: "Venice, FL", href: "/areas/venice" },
+                { label: "Palmetto, FL", href: "/areas/palmetto" },
+                { label: "North Port, FL", href: "/areas/north-port" },
               ].map((area) => (
                 <a
                   key={area.href}
@@ -161,27 +158,27 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
         </section>
 
         {/* CTA */}
-        <section className="py-16 relative overflow-hidden" style={{ backgroundColor: "#0f172a" }}>
+        <section className="py-16 relative overflow-hidden" style={{ backgroundColor: "#1a1a1a" }}>
           <div className="container mx-auto px-4 lg:px-8 text-center">
-            <h2 className="font-heading text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">Ready to Get Started?</h2>
+            <h2 className="font-heading text-3xl lg:text-4xl font-bold text-primary-foreground mb-4 uppercase">Ready to Get Started?</h2>
             <p className="text-primary-foreground/70 mb-8 max-w-xl mx-auto">
-              <a href="/contact" className="text-secondary hover:underline">Contact Emmons Air</a> today for a free consultation and experience the difference.
+              <a href="/contact" className="text-secondary hover:underline">Contact Mr. Bones</a> today for a free estimate.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+18445201313"
+                href="tel:+19417802579"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 transition-colors"
                 style={{ borderRadius: "10px" }}
               >
                 <Phone className="w-5 h-5" />
-                (844) 520-1313
+                (941) 780-2579
               </a>
               <button
                 onClick={openQuoteModal}
-                className="px-8 py-3 font-semibold hover:opacity-90 transition-opacity"
-                style={{ backgroundColor: "#f59e0b", color: "#fff", borderRadius: "10px" }}
+                className="px-8 py-3 font-semibold bg-secondary text-secondary-foreground hover:opacity-90 transition-opacity"
+                style={{ borderRadius: "10px" }}
               >
-                Get Free Quote
+                Free Estimate
               </button>
             </div>
           </div>

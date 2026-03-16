@@ -4,25 +4,23 @@ import CTASection from "@/components/CTASection";
 import { motion } from "framer-motion";
 import { Check, Phone, ArrowRight, MapPin } from "lucide-react";
 import { useQuoteModal } from "@/components/QuoteModal";
-import familyImg from "@/assets/gallery/emmons-family.png";
-import ownerImg from "@/assets/gallery/daikin-rooftop.png";
 import heroServices from "@/assets/hero-services.jpg";
+import imgStumpGrinding from "@/assets/service-stump-grinding.jpg";
 import useSEO from "@/hooks/useSEO";
 
 const AboutPage = () => {
   const { openQuoteModal } = useQuoteModal();
 
   useSEO({
-    title: "About Emmons Air | Family-Owned HVAC Palmetto FL",
-    description: "Meet David Emmons — over 12 years of HVAC experience serving Palmetto, Bradenton & Manatee County. Family-owned, licensed & insured. Call (844) 520-1313.",
-    canonical: "https://emmonsair.com/about",
+    title: "About Mr. Bones Stump Grinding | 30+ Years in Sarasota FL",
+    description: "Learn about Mr. Bones Stump Grinding — over 30 years of professional stump grinding in Sarasota, Bradenton & Venice. Licensed & insured. Call (941) 780-2579.",
+    canonical: "https://mrbonesstumpgrinding.com/about",
   });
 
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        {/* Hero */}
         <section className="relative overflow-hidden bg-black">
           <img
             src={heroServices}
@@ -34,15 +32,14 @@ const AboutPage = () => {
           <div className="container mx-auto px-4 lg:px-8 py-20 lg:py-32 relative z-10 text-center">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
               <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Who We Are</span>
-              <h1 className="font-heading text-4xl lg:text-6xl font-bold text-primary-foreground mt-3">About Emmons Air</h1>
+              <h1 className="font-heading text-4xl lg:text-6xl font-bold text-primary-foreground mt-3 uppercase">About Mr. Bones</h1>
               <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto mt-6 leading-relaxed">
-                Family-owned, community-driven HVAC services you can count on.
+                Over 30 years of professional stump grinding in Southwest Florida.
               </p>
             </motion.div>
           </div>
         </section>
 
-        {/* Meet David */}
         <section className="py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
@@ -52,8 +49,8 @@ const AboutPage = () => {
                 viewport={{ once: true }}
               >
                 <img
-                  src={familyImg}
-                  alt="David Emmons and family"
+                  src={imgStumpGrinding}
+                  alt="Mr. Bones stump grinding work"
                   className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
                 />
               </motion.div>
@@ -63,44 +60,40 @@ const AboutPage = () => {
                 viewport={{ once: true }}
                 className="space-y-6"
               >
-                <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Meet the Owner</span>
-                <h2 className="font-heading text-3xl lg:text-4xl font-bold text-foreground">Hey, I'm David!</h2>
+                <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Our Story</span>
+                <h2 className="font-heading text-3xl lg:text-4xl font-bold text-foreground uppercase">30+ Years of Experience</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  I'm David Emmons, a licensed Air Conditioning contractor with over 12 years of experience serving the Palmetto, Bradenton, and Sarasota areas. As a family-owned and operated business, I take pride in treating every home like my own.
+                  Mr. Bones Stump Grinding has been serving Sarasota, Bradenton, and Venice for over 30 years. We specialize exclusively in stump grinding — it's what we do best.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  My commitment is simple: honest work, fair prices, and making sure you're completely satisfied. When you call Emmons Air, you're not just getting a technician — you're getting a neighbor who cares about your comfort.
+                  With three stump grinders in our fleet, we have the right equipment for any job. From a single backyard stump to large commercial land clearing projects, we bring the same level of professionalism and care to every job.
                 </p>
               </motion.div>
             </div>
           </div>
         </section>
 
-        {/* What We Do */}
-        <section className="py-16 lg:py-24" style={{ backgroundColor: "#0f172a" }}>
+        <section className="py-16 lg:py-24" style={{ backgroundColor: "#1a1a1a" }}>
           <div className="container mx-auto px-4 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div className="max-w-4xl mx-auto">
               <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="space-y-6 order-2 lg:order-1"
+                className="space-y-6"
               >
-                <span className="text-sm font-semibold text-secondary uppercase tracking-wider">What We Do</span>
-                <h2 className="font-heading text-3xl lg:text-4xl font-bold text-primary-foreground">
-                  Top-Quality Products & Exceptional Service
+                <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Why Choose Us</span>
+                <h2 className="font-heading text-3xl lg:text-4xl font-bold text-primary-foreground uppercase">
+                  State-of-the-Art Equipment & Expert Service
                 </h2>
-                <p className="text-primary-foreground/70 leading-relaxed">
-                  At Emmons Air, we only use industry-leading products and materials. Our professional HVAC contractors are committed to providing our customers with fast, reliable and affordable services.
-                </p>
                 <ul className="space-y-3">
                   {[
-                    "Licensed & insured technicians",
-                    "Over 12 years of industry experience",
-                    "Family-owned and locally operated",
-                    "24/7 emergency service available",
-                    "Upfront pricing with no hidden fees",
-                    "Satisfaction guaranteed on every job",
+                    "Three professional stump grinders for any size job",
+                    "Over 30 years of industry experience",
+                    "Fully licensed and insured",
+                    "Fair, upfront pricing — no hidden fees",
+                    "Same-day service available",
+                    "Clean, professional results guaranteed",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-primary-foreground/80">
                       <Check className="w-5 h-5 text-green-500 mt-0.5 shrink-0" />
@@ -109,35 +102,22 @@ const AboutPage = () => {
                   ))}
                 </ul>
               </motion.div>
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                className="order-1 lg:order-2"
-              >
-                <img
-                  src={ownerImg}
-                  alt="Daikin rooftop HVAC unit installed by Emmons Air"
-                  className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
-                />
-              </motion.div>
             </div>
           </div>
         </section>
 
-        {/* Services & Areas Links */}
         <section className="py-16 lg:py-20">
           <div className="container mx-auto px-4 lg:px-8 max-w-5xl">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Our Services</h2>
-                <p className="text-muted-foreground mb-6">We offer comprehensive HVAC solutions for homes across Manatee County.</p>
+                <h2 className="font-heading text-2xl font-bold text-foreground mb-4 uppercase">Our Services</h2>
+                <p className="text-muted-foreground mb-6">We specialize in stump grinding and related services.</p>
                 <ul className="space-y-3">
                   {[
-                    { label: "AC Repair — fast, same-day service", href: "/services/ac-repair" },
-                    { label: "AC Installation — energy-efficient systems", href: "/services/ac-installation" },
-                    { label: "AC Maintenance — prevent costly breakdowns", href: "/services/ac-maintenance" },
-                    { label: "Duct Cleaning — improve air quality", href: "/services/duct-cleaning" },
+                    { label: "Stump Grinding — any size, any species", href: "/services/stump-grinding" },
+                    { label: "Root Removal — protect your property", href: "/services/root-removal" },
+                    { label: "Land Clearing — lot prep & construction", href: "/services/land-clearing" },
+                    { label: "Storm Cleanup — post-hurricane response", href: "/services/storm-cleanup" },
                   ].map((s) => (
                     <li key={s.href}>
                       <a href={s.href} className="flex items-center gap-2 text-muted-foreground hover:text-secondary transition-colors">
@@ -149,15 +129,15 @@ const AboutPage = () => {
                 </ul>
               </div>
               <div>
-                <h2 className="font-heading text-2xl font-bold text-foreground mb-4">Areas We Serve</h2>
-                <p className="text-muted-foreground mb-6">Proudly serving these communities and beyond. <a href="/contact" className="text-secondary hover:underline">Contact us</a> to see if we cover your area.</p>
+                <h2 className="font-heading text-2xl font-bold text-foreground mb-4 uppercase">Areas We Serve</h2>
+                <p className="text-muted-foreground mb-6">Proudly serving these communities and beyond.</p>
                 <ul className="space-y-3">
                   {[
-                    { label: "Palmetto, FL", href: "/areas/palmetto" },
+                    { label: "Sarasota, FL", href: "/areas/sarasota" },
                     { label: "Bradenton, FL", href: "/areas/bradenton" },
-                    { label: "Memphis, FL", href: "/areas/memphis" },
-                    { label: "Ellenton, FL", href: "/areas/ellenton" },
-                    { label: "Palma Sola, FL", href: "/areas/palma-sola" },
+                    { label: "Venice, FL", href: "/areas/venice" },
+                    { label: "Palmetto, FL", href: "/areas/palmetto" },
+                    { label: "North Port, FL", href: "/areas/north-port" },
                   ].map((a) => (
                     <li key={a.href}>
                       <a href={a.href} className="flex items-center gap-2 text-muted-foreground hover:text-secondary transition-colors">

@@ -13,39 +13,39 @@ interface ServiceAreaPageProps {
 
 const services = [
   {
-    title: "AC Repair",
-    href: "/services/ac-repair",
+    title: "Stump Grinding",
+    href: "/services/stump-grinding",
     items: [
-      "Diagnostic services — troubleshooting faulty AC units",
-      "Common repairs — refrigerant leaks, thermostat issues, broken compressors or fans",
-      "Emergency repairs — same-day or 24/7 services for urgent problems",
+      "Residential & commercial stump grinding",
+      "Below-grade grinding for replanting",
+      "Same-day service available",
     ],
   },
   {
-    title: "AC Maintenance",
-    href: "/services/ac-maintenance",
+    title: "Root Removal",
+    href: "/services/root-removal",
     items: [
-      "Routine inspections — checking system performance, identifying potential issues",
-      "Filter replacement — improving air quality and unit efficiency",
-      "Cleaning coils & fins — preventing dirt buildup and optimizing energy efficiency",
+      "Surface root grinding to prevent damage",
+      "Foundation and driveway protection",
+      "Complete root system removal",
     ],
   },
   {
-    title: "AC Installation",
-    href: "/services/ac-installation",
+    title: "Land Clearing",
+    href: "/services/land-clearing",
     items: [
-      "New system consultation — assessing property needs for the best AC unit fit",
-      "Energy-efficient systems — reducing energy consumption and utility costs",
-      "Custom installations — seamless integration with existing HVAC infrastructure",
+      "Lot clearing for new construction",
+      "Multiple stump removal projects",
+      "Volume discounts for large jobs",
     ],
   },
   {
-    title: "Duct Cleaning",
-    href: "/services/duct-cleaning",
+    title: "Storm Cleanup",
+    href: "/services/storm-cleanup",
     items: [
-      "Air quality improvement — removing dust, allergens, and pollutants",
-      "Efficiency boost — improving airflow throughout your home",
-      "Mold prevention — sanitizing ductwork to prevent mold and mildew growth",
+      "Post-hurricane stump removal",
+      "Emergency response available",
+      "Property restoration support",
     ],
   },
 ];
@@ -57,7 +57,6 @@ const ServiceAreaPage = ({ city, tagline, intro }: ServiceAreaPageProps) => {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        {/* Hero */}
         <section className="relative overflow-hidden bg-black">
           <img
             src={heroServices}
@@ -72,33 +71,32 @@ const ServiceAreaPage = ({ city, tagline, intro }: ServiceAreaPageProps) => {
                 <MapPin className="w-5 h-5 text-secondary" />
                 <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Service Area</span>
               </div>
-              <h1 className="font-heading text-4xl lg:text-6xl font-bold text-primary-foreground">
-                HVAC Services in {city}
+              <h1 className="font-heading text-4xl lg:text-6xl font-bold text-primary-foreground uppercase">
+                Stump Grinding in {city}
               </h1>
               <p className="text-xl text-primary-foreground/80 mt-3 font-medium">{tagline}</p>
               <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto mt-6 leading-relaxed">{intro}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
                 <a
-                  href="tel:+18445201313"
+                  href="tel:+19417802579"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 transition-colors"
                   style={{ borderRadius: "10px" }}
                 >
                   <Phone className="w-5 h-5" />
-                  (844) 520-1313
+                  (941) 780-2579
                 </a>
                 <button
                   onClick={openQuoteModal}
-                  className="px-8 py-3 font-semibold hover:opacity-90 transition-opacity"
-                  style={{ backgroundColor: "#f59e0b", color: "#fff", borderRadius: "10px" }}
+                  className="px-8 py-3 font-semibold bg-secondary text-secondary-foreground hover:opacity-90 transition-opacity"
+                  style={{ borderRadius: "10px" }}
                 >
-                  Get Free Quote
+                  Free Estimate
                 </button>
               </div>
             </motion.div>
           </div>
         </section>
 
-        {/* Services Grid */}
         <section className="py-16 lg:py-24">
           <div className="container mx-auto px-4 lg:px-8">
             <motion.div
@@ -107,8 +105,8 @@ const ServiceAreaPage = ({ city, tagline, intro }: ServiceAreaPageProps) => {
               viewport={{ once: true }}
               className="text-center mb-16"
             >
-              <h2 className="font-heading text-3xl lg:text-4xl font-bold text-foreground">
-                HVAC Services We Provide in {city}
+              <h2 className="font-heading text-3xl lg:text-4xl font-bold text-foreground uppercase">
+                Our Services in {city}
               </h2>
             </motion.div>
 
@@ -121,9 +119,9 @@ const ServiceAreaPage = ({ city, tagline, intro }: ServiceAreaPageProps) => {
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
                   className="rounded-2xl p-8 border border-secondary/30"
-                  style={{ backgroundColor: "#0f172a" }}
+                  style={{ backgroundColor: "#1a1a1a" }}
                 >
-                  <h3 className="font-heading text-xl font-bold text-primary-foreground mb-4">{service.title}</h3>
+                  <h3 className="font-heading text-xl font-bold text-primary-foreground mb-4 uppercase">{service.title}</h3>
                   <ul className="space-y-3 mb-6">
                     {service.items.map((item, j) => (
                       <li key={j} className="flex items-start gap-3 text-sm text-primary-foreground/80">
@@ -144,39 +142,37 @@ const ServiceAreaPage = ({ city, tagline, intro }: ServiceAreaPageProps) => {
           </div>
         </section>
 
-        {/* About Link */}
         <section className="py-12 lg:py-16 border-t border-border">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
             <p className="text-muted-foreground text-lg">
-              Want to know who's coming to your home? <a href="/about" className="text-secondary font-semibold hover:underline">Meet the Emmons Air team</a> — family-owned and locally operated since 2012. You can also <a href="/gallery" className="text-secondary font-semibold hover:underline">browse our work gallery</a> to see recent projects.
+              <a href="/about" className="text-secondary font-semibold hover:underline">Learn more about Mr. Bones</a> — over 30 years of professional stump grinding. You can also <a href="/gallery" className="text-secondary font-semibold hover:underline">browse our work gallery</a>.
             </p>
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="py-16 relative overflow-hidden" style={{ backgroundColor: "#0f172a" }}>
+        <section className="py-16 relative overflow-hidden" style={{ backgroundColor: "#1a1a1a" }}>
           <div className="container mx-auto px-4 lg:px-8 text-center">
-            <h2 className="font-heading text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
-              Need HVAC Service in {city}?
+            <h2 className="font-heading text-3xl lg:text-4xl font-bold text-primary-foreground mb-4 uppercase">
+              Need Stump Grinding in {city}?
             </h2>
             <p className="text-primary-foreground/70 mb-8 max-w-xl mx-auto">
-              <a href="/contact" className="text-secondary hover:underline">Contact Emmons Air</a> today. We're your trusted local HVAC experts serving {city} and surrounding areas.
+              <a href="/contact" className="text-secondary hover:underline">Contact Mr. Bones</a> today for a free estimate.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+18445201313"
+                href="tel:+19417802579"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-secondary border border-secondary hover:bg-secondary/10 transition-colors"
                 style={{ borderRadius: "10px" }}
               >
                 <Phone className="w-5 h-5" />
-                (844) 520-1313
+                (941) 780-2579
               </a>
               <button
                 onClick={openQuoteModal}
-                className="px-8 py-3 font-semibold hover:opacity-90 transition-opacity"
-                style={{ backgroundColor: "#f59e0b", color: "#fff", borderRadius: "10px" }}
+                className="px-8 py-3 font-semibold bg-secondary text-secondary-foreground hover:opacity-90 transition-opacity"
+                style={{ borderRadius: "10px" }}
               >
-                Get Free Quote
+                Free Estimate
               </button>
             </div>
           </div>
