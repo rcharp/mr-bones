@@ -3,20 +3,42 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import useSEO from "@/hooks/useSEO";
-import imgStumpGrinding from "@/assets/service-stump-grinding.jpg";
-import imgCommercial from "@/assets/service-commercial.jpg";
-import imgRootRemoval from "@/assets/service-root-removal.jpg";
-import imgStormCleanup from "@/assets/service-storm-cleanup.jpg";
-import heroBg from "@/assets/hero-bg.png";
-import truckImg from "@/assets/palmetto-point-truck.png";
+import imgGrinderField from "@/assets/gallery/grinder-field.jpg";
+import imgGrinderResidential from "@/assets/gallery/grinder-residential.jpg";
+import imgGrinderPark from "@/assets/gallery/grinder-park.jpg";
+import imgGrinderTruck from "@/assets/gallery/grinder-truck.jpg";
+import imgGrinderBigStump from "@/assets/gallery/grinder-big-stump.jpg";
+import imgGrinderCommercial from "@/assets/gallery/grinder-commercial.jpg";
+import imgGrinderCondo from "@/assets/gallery/grinder-condo.jpg";
+import imgGrinderTrailer from "@/assets/gallery/grinder-trailer-setup.jpg";
+import imgStumpBefore from "@/assets/gallery/stump-before.jpg";
+import imgGrinderFerns from "@/assets/gallery/grinder-ferns.jpg";
+import imgGrinderBridge from "@/assets/gallery/grinder-bridge.jpg";
+import imgGrinderSp8018 from "@/assets/gallery/grinder-sp8018.jpg";
+import imgGrinderLandscaping from "@/assets/gallery/grinder-landscaping.jpg";
+import imgGrinderRanch from "@/assets/gallery/grinder-ranch.jpg";
+import imgGrinderAction from "@/assets/gallery/grinder-action.jpg";
+import imgGrinderSmallStump from "@/assets/gallery/grinder-small-stump.jpg";
+import imgGrinderHillside from "@/assets/gallery/grinder-hillside.jpg";
 
 const images = [
-  { src: heroBg, alt: "Stump grinding in action" },
-  { src: imgStumpGrinding, alt: "Before and after stump grinding" },
-  { src: imgCommercial, alt: "Commercial land clearing project" },
-  { src: imgRootRemoval, alt: "Root removal service" },
-  { src: imgStormCleanup, alt: "Storm cleanup stump removal" },
-  { src: truckImg, alt: "Mr. Bones equipment on site" },
+  { src: imgGrinderTruck, alt: "Mr. Bones grinder with truck on residential job" },
+  { src: imgGrinderBigStump, alt: "Large stump grinding in tropical garden" },
+  { src: imgGrinderAction, alt: "Mr. Bones grinder in action on oak stump" },
+  { src: imgGrinderResidential, alt: "Stump grinding at residential property" },
+  { src: imgGrinderFerns, alt: "Mr. Bones grinder near fern garden" },
+  { src: imgGrinderHillside, alt: "Stump grinding on hillside property" },
+  { src: imgGrinderCommercial, alt: "Commercial stump grinding job" },
+  { src: imgGrinderRanch, alt: "Carlton grinder on ranch property" },
+  { src: imgGrinderBridge, alt: "Stump grinding near bridge" },
+  { src: imgGrinderCondo, alt: "Stump removal at condo complex" },
+  { src: imgGrinderSmallStump, alt: "Mr. Bones grinding small stump" },
+  { src: imgGrinderSp8018, alt: "Carlton SP8018 TRX stump grinder" },
+  { src: imgGrinderLandscaping, alt: "Stump grinding in landscaped area" },
+  { src: imgGrinderTrailer, alt: "Mr. Bones equipment with trailer" },
+  { src: imgStumpBefore, alt: "Large oak stump before grinding" },
+  { src: imgGrinderField, alt: "Stump grinding in open field" },
+  { src: imgGrinderPark, alt: "Completed stump grinding at park" },
 ];
 
 const GalleryPage = () => {
