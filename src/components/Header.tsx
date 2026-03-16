@@ -115,7 +115,7 @@ const Header = () => {
               className="px-2 sm:px-3 lg:px-6 py-2.5 sm:py-2.5 lg:py-3 text-xs sm:text-sm lg:text-base font-semibold bg-secondary text-secondary-foreground hover:opacity-90 transition-opacity whitespace-nowrap"
               style={{ borderRadius: "10px" }}
             >
-              Free Estimate
+              Get Free Quote
             </button>
           </div>
 
