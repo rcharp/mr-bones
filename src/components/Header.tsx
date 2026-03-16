@@ -47,7 +47,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between py-3 px-4 lg:px-8 max-w-[100vw]">
         {/* Logo */}
         <a href="/" className="flex items-center gap-3 shrink-0 mr-2 lg:mr-4">
-          <img src={logo} alt="Mr. Bones Stump Grinding" className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16" />
+          <img src={logo} alt="Mr. Bones Stump Grinding" className="h-[150px] w-auto" />
           <span className="hidden lg:block font-heading text-xl font-bold text-primary-foreground uppercase tracking-wide">
             Mr. Bones<br /><span className="text-secondary text-sm">Stump Grinding</span>
           </span>
