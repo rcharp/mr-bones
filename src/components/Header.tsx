@@ -201,7 +201,7 @@ const Header = () => {
                   className="block w-full text-center px-6 py-3 text-sm font-semibold bg-secondary text-secondary-foreground"
                   style={{ borderRadius: "10px" }}
                 >
-                  Free Estimate
+                  Get Free Quote
                 </button>
               </div>
             </div>

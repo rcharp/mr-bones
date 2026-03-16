@@ -35,7 +35,7 @@ const CTASection = () => {
               className="inline-flex items-center gap-2 px-8 py-4 font-semibold border-2 border-foreground text-foreground hover:bg-foreground hover:text-background transition-colors"
               style={{ borderRadius: "10px" }}
             >
-              Get Free Estimate
+              Get Free Quote
             </button>
           </div>
         </motion.div>
