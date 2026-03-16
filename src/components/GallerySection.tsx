@@ -4,15 +4,15 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import imgGrinderField from "@/assets/gallery/grinder-field.jpg";
 import imgGrinderResidential from "@/assets/gallery/grinder-residential.jpg";
-import imgGrinderPark from "@/assets/gallery/grinder-park.jpg";
+import imgGrinderLongView from "@/assets/gallery/grinder-long-view.jpg";
 import imgGrinderTruck from "@/assets/gallery/grinder-truck.jpg";
 import imgGrinderBigStump from "@/assets/gallery/grinder-big-stump.jpg";
 import imgGrinderCommercial from "@/assets/gallery/grinder-commercial.jpg";
-import imgGrinderCondo from "@/assets/gallery/grinder-condo.jpg";
+import imgGrinderWoods from "@/assets/gallery/grinder-woods.jpg";
 import imgGrinderTrailer from "@/assets/gallery/grinder-trailer-setup.jpg";
-import imgStumpBefore from "@/assets/gallery/stump-before.jpg";
+import imgGrinderAction from "@/assets/gallery/grinder-action.jpg";
 
-const images = [imgGrinderTruck, imgGrinderBigStump, imgGrinderResidential, imgGrinderCommercial, imgGrinderField, imgGrinderCondo, imgGrinderTrailer, imgStumpBefore, imgGrinderPark];
+const images = [imgGrinderTruck, imgGrinderBigStump, imgGrinderLongView, imgGrinderCommercial, imgGrinderField, imgGrinderWoods, imgGrinderTrailer, imgGrinderAction, imgGrinderResidential];
 
 const GallerySection = () => (
   <section className="py-20 lg:py-28 section-gradient">
