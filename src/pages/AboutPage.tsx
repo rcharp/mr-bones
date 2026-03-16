@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Check, Phone, ArrowRight, MapPin } from "lucide-react";
 import { useQuoteModal } from "@/components/QuoteModal";
 import heroServices from "@/assets/hero-services.jpg";
-import imgStumpGrinding from "@/assets/service-stump-grinding.jpg";
+import ownerTroy from "@/assets/owner-troy.jpg";
 import useSEO from "@/hooks/useSEO";
 
 const AboutPage = () => {
@@ -49,8 +49,8 @@ const AboutPage = () => {
                 viewport={{ once: true }}
               >
                 <img
-                  src={imgStumpGrinding}
-                  alt="Mr. Bones stump grinding work"
+                  src={ownerTroy}
+                  alt="Troy — Owner of Mr. Bones Stump Grinding"
                   className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
                 />
               </motion.div>
@@ -63,10 +63,10 @@ const AboutPage = () => {
                 <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Our Story</span>
                 <h2 className="font-heading text-3xl lg:text-4xl font-bold text-foreground uppercase">30+ Years of Experience</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Mr. Bones Stump Grinding has been serving Sarasota, Bradenton, and Venice for over 30 years. We specialize exclusively in stump grinding — it's what we do best.
+                  Founded by Troy, Mr. Bones Stump Grinding has been serving Sarasota, Bradenton, and Venice for over 30 years. We specialize exclusively in stump grinding — it's what we do best.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  With three stump grinders in our fleet, we have the right equipment for any job. From a single backyard stump to large commercial land clearing projects, we bring the same level of professionalism and care to every job.
+                  With three stump grinders in our fleet, Troy and his team have the right equipment for any job. From a single backyard stump to large commercial land clearing projects, we bring the same level of professionalism and care to every job.
                 </p>
               </motion.div>
             </div>
