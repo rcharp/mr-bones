@@ -49,8 +49,8 @@ const AboutPage = () => {
                 viewport={{ once: true }}
               >
                 <img
-                  src={imgStumpGrinding}
-                  alt="Mr. Bones stump grinding work"
+                  src={ownerTroy}
+                  alt="Troy — Owner of Mr. Bones Stump Grinding"
                   className="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]"
                 />
               </motion.div>
