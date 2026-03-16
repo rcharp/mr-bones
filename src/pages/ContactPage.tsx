@@ -72,8 +72,9 @@ const ContactPage = () => {
                       <MapPin className="w-5 h-5 text-secondary" />
                     </div>
                     <div>
-                      <h3 className="font-heading font-semibold text-foreground mb-1">Service Area</h3>
-                      <p className="text-muted-foreground">Sarasota, Bradenton, Venice & surrounding areas</p>
+                      <h3 className="font-heading font-semibold text-foreground mb-1">Address</h3>
+                      <p className="text-muted-foreground">5725 Britannia Dr, Sarasota, FL 34231</p>
+                      <p className="text-muted-foreground text-sm mt-1">Serving Sarasota, Bradenton, Venice & surrounding areas</p>
                     </div>
                   </div>
 
