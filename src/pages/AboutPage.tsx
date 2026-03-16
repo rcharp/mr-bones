@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Check, Phone, ArrowRight, MapPin } from "lucide-react";
 import { useQuoteModal } from "@/components/QuoteModal";
 import heroServices from "@/assets/hero-services.jpg";
-import imgStumpGrinding from "@/assets/service-stump-grinding.jpg";
+import ownerTroy from "@/assets/owner-troy.jpg";
 import useSEO from "@/hooks/useSEO";
 
 const AboutPage = () => {
