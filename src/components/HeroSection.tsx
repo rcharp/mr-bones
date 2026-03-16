@@ -23,9 +23,13 @@ const HeroSection = () => {
         />
       </div>
       <section className="relative overflow-hidden max-w-[100vw]">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroBg})` }}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          src="/hero-bg-video.mp4"
         />
         <div className="absolute inset-0 bg-black/70" />
 
