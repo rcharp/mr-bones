@@ -28,7 +28,7 @@ const AboutSection = () => (
               </div>
               <div>
                 <div className="text-sm text-muted-foreground">Location</div>
-                <div className="text-base font-semibold text-foreground">Sarasota, FL</div>
+                <div className="text-base font-semibold text-foreground">5725 Britannia Dr, Sarasota, FL 34231</div>
               </div>
             </div>
             <div className="flex items-center gap-3">
