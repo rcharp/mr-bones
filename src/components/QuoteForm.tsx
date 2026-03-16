@@ -85,7 +85,8 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
               src={logo}
               alt="Mr. Bones Stump Grinding"
               className="w-full h-full object-cover scale-[1.28]"
-          />
+            />
+          </div>
           <h2 className={`font-heading font-bold text-white ${compact ? 'text-2xl mt-1' : 'text-2xl'} uppercase`}>
             Get a Free Quote
           </h2>
