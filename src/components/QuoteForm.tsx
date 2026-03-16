@@ -80,10 +80,11 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
     >
       {showHeader && (
         <div className={`text-center ${compact ? 'space-y-2 pb-1' : 'space-y-3 pb-2'}`}>
-          <img
-            src={logo}
-            alt="Mr. Bones Stump Grinding"
-            className="w-16 h-16 mx-auto rounded-full object-cover"
+          <div className="w-16 h-16 mx-auto rounded-full overflow-hidden" style={{ boxShadow: '0 0 0 0.5px rgba(255,255,255,0.3)' }}>
+            <img
+              src={logo}
+              alt="Mr. Bones Stump Grinding"
+              className="w-full h-full object-cover scale-[1.28]"
           />
           <h2 className={`font-heading font-bold text-white ${compact ? 'text-2xl mt-1' : 'text-2xl'} uppercase`}>
             Get a Free Quote

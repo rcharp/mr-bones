@@ -7,7 +7,9 @@ const Footer = () => (
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
         {/* Brand */}
         <div className="space-y-4">
-          <img src={logo} alt="Mr. Bones Stump Grinding" className="w-20 h-20 rounded-full object-cover" />
+          <div className="w-20 h-20 rounded-full overflow-hidden" style={{ boxShadow: '0 0 0 0.5px rgba(255,255,255,0.3)' }}>
+            <img src={logo} alt="Mr. Bones Stump Grinding" className="w-full h-full object-cover scale-[1.28]" />
+          </div>
           <p className="text-sm text-primary-foreground/60 leading-relaxed">
             Serving Sarasota, Bradenton & Venice for over 30 years. Professional stump grinding you can count on.
           </p>

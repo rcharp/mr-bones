@@ -47,8 +47,8 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between py-3 px-4 lg:px-8 max-w-[100vw]">
         {/* Logo */}
         <a href="/" className="shrink-0 mr-2 lg:mr-4">
-          <div className="h-[200px] w-[200px] rounded-full overflow-hidden" style={{ boxShadow: '0 0 0 0.5px rgba(255,255,255,0.5)' }}>
-            <img src={logo} alt="Mr. Bones Stump Grinding" className="w-full h-full object-cover scale-[1.22]" />
+          <div className="h-[200px] w-[200px] rounded-full overflow-hidden" style={{ boxShadow: '0 0 0 0.5px rgba(255,255,255,0.3)' }}>
+            <img src={logo} alt="Mr. Bones Stump Grinding" className="w-full h-full object-cover scale-[1.28]" />
           </div>
         </a>
 
