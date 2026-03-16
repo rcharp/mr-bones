@@ -2,7 +2,7 @@ import { Star } from "lucide-react";
 import { motion } from "framer-motion";
 import { useQuoteModal } from "./QuoteModal";
 import QuoteForm from "./QuoteForm";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/gallery/job-site-8.jpg";
 import truckImg from "@/assets/gallery/grinder-truck.jpg";
 
 const HeroSection = () => {
