@@ -1,5 +1,5 @@
 import { Phone, MapPin, Clock, Facebook } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-circle.png";
 
 const Footer = () => (
   <footer className="text-primary-foreground py-16" style={{ backgroundColor: "#1a1a1a" }}>
@@ -8,7 +8,7 @@ const Footer = () => (
         {/* Brand */}
         <div className="space-y-4">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Mr. Bones Stump Grinding" className="w-20 h-20" />
+            <img src={logo} alt="Mr. Bones Stump Grinding" className="w-20 h-20 rounded-full object-cover" />
             <div>
               <div className="font-heading text-xl font-bold uppercase">Mr. Bones</div>
               <div className="text-secondary text-sm font-heading uppercase">Stump Grinding</div>
@@ -55,7 +55,7 @@ const Footer = () => (
           </div>
           <div className="flex items-start gap-3">
             <Clock className="w-4 h-4 mt-0.5 opacity-60" />
-            <span className="text-base opacity-80">Mon–Sat · Call for hours</span>
+            <span className="text-base opacity-80">Open 24 Hours</span>
           </div>
           <div className="flex items-start gap-3">
             <Facebook className="w-4 h-4 mt-0.5 opacity-60" />
