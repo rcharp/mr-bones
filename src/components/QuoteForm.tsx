@@ -3,8 +3,9 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "sonner";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-circle.png";
 
 interface QuoteFormProps {
   showHeader?: boolean;
@@ -16,6 +17,8 @@ interface QuoteFormProps {
 const QuoteForm = ({ showHeader = true, compact = false, className = "", style }: QuoteFormProps) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [consentContact, setConsentContact] = useState(false);
+  const [consentTerms, setConsentTerms] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",
     phone: "",
@@ -33,10 +36,13 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
       toast.error("Please enter a valid 10-digit phone number.");
       return;
     }
+    if (!consentContact || !consentTerms) {
+      toast.error("Please agree to both consent checkboxes.");
+      return;
+    }
 
     setIsSubmitting(true);
 
-    // Simulate form submission (replace with actual webhook when ready)
     try {
       await new Promise(resolve => setTimeout(resolve, 1000));
       setIsSubmitted(true);
@@ -75,9 +81,13 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
     >
       {showHeader && (
         <div className={`text-center ${compact ? 'space-y-2 pb-1' : 'space-y-3 pb-2'}`}>
-          <img src={logo} alt="Mr. Bones Stump Grinding" className="w-16 h-16 mx-auto" />
+          <img
+            src={logo}
+            alt="Mr. Bones Stump Grinding"
+            className="w-20 h-20 mx-auto rounded-full object-cover"
+          />
           <h2 className={`font-heading font-bold text-white ${compact ? 'text-2xl mt-1' : 'text-2xl'} uppercase`}>
-            Free Estimate
+            Get a Free Quote
           </h2>
         </div>
       )}
@@ -132,13 +142,39 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
         />
       </div>
 
+      {/* Consent checkboxes */}
+      <div className="space-y-3">
+        <div className="flex items-start gap-3">
+          <Checkbox
+            id="consentContact"
+            checked={consentContact}
+            onCheckedChange={(checked) => setConsentContact(checked === true)}
+            className="mt-0.5 border-white/40 data-[state=checked]:bg-secondary data-[state=checked]:border-secondary"
+          />
+          <Label htmlFor="consentContact" className="text-white/70 text-sm leading-snug cursor-pointer">
+            I consent to being contacted by Mr. Bones Stump Grinding via phone or text regarding my quote request.
+          </Label>
+        </div>
+        <div className="flex items-start gap-3">
+          <Checkbox
+            id="consentTerms"
+            checked={consentTerms}
+            onCheckedChange={(checked) => setConsentTerms(checked === true)}
+            className="mt-0.5 border-white/40 data-[state=checked]:bg-secondary data-[state=checked]:border-secondary"
+          />
+          <Label htmlFor="consentTerms" className="text-white/70 text-sm leading-snug cursor-pointer">
+            I agree to the terms of service and privacy policy.
+          </Label>
+        </div>
+      </div>
+
       <Button
         type="submit"
         disabled={isSubmitting}
         className={`w-full font-bold ${compact ? 'text-base py-4' : 'text-lg py-6'} bg-secondary text-secondary-foreground hover:opacity-90 transition-opacity`}
         style={{ borderRadius: "10px" }}
       >
-        {isSubmitting ? "Sending..." : "Get Free Estimate"}
+        {isSubmitting ? "Sending..." : "Get Free Quote"}
       </Button>
     </form>
   );
