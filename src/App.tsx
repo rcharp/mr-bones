@@ -71,6 +71,8 @@ const App = () => (
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/tips" element={<BlogPage />} />
+            <Route path="/tips/:slug" element={<BlogPostPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </QuoteModalProvider>
