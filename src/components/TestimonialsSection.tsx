@@ -103,7 +103,7 @@ const TestimonialsSection = () => {
                 </div>
                 <div>
                   <div className="font-heading font-semibold text-foreground">{testimonials[current].name}</div>
-                  <div className="text-sm text-muted-foreground">Verified Customer</div>
+                  <div className="text-sm text-muted-foreground">via {testimonials[current].source}</div>
                 </div>
               </div>
             </motion.div>
