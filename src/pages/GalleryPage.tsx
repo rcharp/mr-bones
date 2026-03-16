@@ -20,6 +20,13 @@ import imgGrinderRanch from "@/assets/gallery/grinder-ranch.jpg";
 import imgGrinderAction from "@/assets/gallery/grinder-action.jpg";
 import imgGrinderSmallStump from "@/assets/gallery/grinder-small-stump.jpg";
 import imgGrinderHillside from "@/assets/gallery/grinder-hillside.jpg";
+import imgGrinderLongView from "@/assets/gallery/grinder-long-view.jpg";
+import imgGrinderRootsYard from "@/assets/gallery/grinder-roots-yard.jpg";
+import imgGrinderWoods from "@/assets/gallery/grinder-woods.jpg";
+import imgGrinderSideProfile from "@/assets/gallery/grinder-side-profile.jpg";
+import imgGrinderBridge2 from "@/assets/gallery/grinder-bridge-2.jpg";
+import imgGrinderGardenCut from "@/assets/gallery/grinder-garden-cut.jpg";
+import imgGrinderOpenField from "@/assets/gallery/grinder-open-field.jpg";
 
 const images = [
   { src: imgGrinderTruck, alt: "Mr. Bones grinder with truck on residential job" },
@@ -28,13 +35,20 @@ const images = [
   { src: imgGrinderResidential, alt: "Stump grinding at residential property" },
   { src: imgGrinderFerns, alt: "Mr. Bones grinder near fern garden" },
   { src: imgGrinderHillside, alt: "Stump grinding on hillside property" },
+  { src: imgGrinderLongView, alt: "Long-view shot of grinder on residential lot" },
+  { src: imgGrinderRootsYard, alt: "Stump grinding with exposed roots in yard" },
+  { src: imgGrinderWoods, alt: "Mr. Bones stump grinder in wooded property" },
+  { src: imgGrinderSideProfile, alt: "Side profile of grinder working through mulch" },
   { src: imgGrinderCommercial, alt: "Commercial stump grinding job" },
   { src: imgGrinderRanch, alt: "Carlton grinder on ranch property" },
   { src: imgGrinderBridge, alt: "Stump grinding near bridge" },
+  { src: imgGrinderBridge2, alt: "Second angle of bridge-side stump grinding" },
   { src: imgGrinderCondo, alt: "Stump removal at condo complex" },
   { src: imgGrinderSmallStump, alt: "Mr. Bones grinding small stump" },
   { src: imgGrinderSp8018, alt: "Carlton SP8018 TRX stump grinder" },
   { src: imgGrinderLandscaping, alt: "Stump grinding in landscaped area" },
+  { src: imgGrinderGardenCut, alt: "Garden-area stump cut and grind" },
+  { src: imgGrinderOpenField, alt: "Open-field stump grinding service" },
   { src: imgGrinderTrailer, alt: "Mr. Bones equipment with trailer" },
   { src: imgStumpBefore, alt: "Large oak stump before grinding" },
   { src: imgGrinderField, alt: "Stump grinding in open field" },
