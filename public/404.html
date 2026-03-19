@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title>Mr. Bones Stump Grinding</title>
     <script>
-      // SPA redirect for GitHub Pages
-      // Converts path to query string so index.html can restore it
-      var pathSegmentsToKeep = 0; // custom domain, no repo segment
+      // SPA redirect for GitHub Pages and custom domains
+      // Keeps the repo segment only on the github.io URL
+      var pathSegmentsToKeep = window.location.hostname === 'rcharp.github.io' ? 1 : 0;
       var l = window.location;
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +

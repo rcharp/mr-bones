@@ -47,12 +47,17 @@ const InternalAnchorRouter = () => {
   return null;
 };
 
+const runtimeBasename =
+  typeof window !== "undefined" && window.location.hostname === "rcharp.github.io"
+    ? "/mr-bones"
+    : "";
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+      <BrowserRouter basename={runtimeBasename}>
         <InternalAnchorRouter />
         <QuoteModalProvider>
           <Routes>
