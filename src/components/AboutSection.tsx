@@ -14,10 +14,10 @@ const AboutSection = () => (
         >
           <span className="text-base font-semibold text-secondary uppercase tracking-wider">About Us</span>
           <h2 className="font-heading text-4xl lg:text-5xl font-bold text-foreground uppercase">
-            30+ Years of Experience
+            31 Years of Experience
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            Mr. Bones Stump Grinding has proudly served the Sarasota, Bradenton, and Venice areas for over 30 years. We specialize in professional stump grinding with state-of-the-art equipment. No stump is too big or too small for our team.
+            Providing professional stump grinding at reasonable prices. Mr. Bones Stump Grinding has proudly served the Sarasota, Bradenton, Venice, Arcadia, and Wauchula areas for over 31 years. We specialize in professional stump grinding and stump removal with state-of-the-art equipment. No stump is too big or too small for our team.
           </p>
           <p className="text-muted-foreground leading-relaxed">
             With three stump grinders, we have the right equipment for any job. We're fully licensed and insured, and we treat every property with the same care and respect we'd give our own.
@@ -29,7 +29,7 @@ const AboutSection = () => (
               </div>
               <div>
                 <div className="text-sm text-muted-foreground">Location</div>
-                <div className="text-base font-semibold text-foreground">5725 Britannia Dr, Sarasota, FL 34231</div>
+                <div className="text-base font-semibold text-foreground">7821 235th Street East, Myakka, FL 34251</div>
               </div>
             </div>
             <div className="flex items-center gap-3">

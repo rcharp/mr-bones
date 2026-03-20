@@ -5,40 +5,34 @@ const Footer = () => (
   <footer className="text-primary-foreground py-16" style={{ backgroundColor: "#1a1a1a" }}>
     <div className="container mx-auto px-4 lg:px-8">
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
-        {/* Brand */}
         <div className="space-y-4">
           <div className="w-20 h-20 rounded-full overflow-hidden" style={{ boxShadow: '0 0 0 0.5px rgba(255,255,255,0.3)' }}>
             <img src={logo} alt="Mr. Bones Stump Grinding" className="w-full h-full object-cover scale-[1.28]" />
           </div>
           <p className="text-sm text-primary-foreground/60 leading-relaxed">
-            Serving Sarasota, Bradenton & Venice for over 30 years. Professional stump grinding you can count on.
+            Providing professional stump grinding at reasonable prices. Serving Sarasota, Bradenton, Venice, Arcadia & Wauchula for over 31 years.
           </p>
         </div>
 
-        {/* Services */}
         <div>
           <h4 className="font-heading font-semibold text-base uppercase tracking-wider mb-4 opacity-60">Services</h4>
           <nav className="space-y-3">
             <a href="/services/stump-grinding" className="block text-base opacity-80 hover:text-secondary transition-colors">Stump Grinding</a>
-            <a href="/services/root-removal" className="block text-base opacity-80 hover:text-secondary transition-colors">Root Removal</a>
-            <a href="/services/land-clearing" className="block text-base opacity-80 hover:text-secondary transition-colors">Land Clearing</a>
-            <a href="/services/storm-cleanup" className="block text-base opacity-80 hover:text-secondary transition-colors">Storm Cleanup</a>
+            <a href="/services/stump-removal" className="block text-base opacity-80 hover:text-secondary transition-colors">Stump Removal</a>
           </nav>
         </div>
 
-        {/* Service Areas */}
         <div>
           <h4 className="font-heading font-semibold text-base uppercase tracking-wider mb-4 opacity-60">Service Areas</h4>
           <nav className="space-y-3">
             <a href="/areas/sarasota" className="block text-base opacity-80 hover:text-secondary transition-colors">Sarasota, FL</a>
             <a href="/areas/bradenton" className="block text-base opacity-80 hover:text-secondary transition-colors">Bradenton, FL</a>
             <a href="/areas/venice" className="block text-base opacity-80 hover:text-secondary transition-colors">Venice, FL</a>
-            <a href="/areas/palmetto" className="block text-base opacity-80 hover:text-secondary transition-colors">Palmetto, FL</a>
-            <a href="/areas/north-port" className="block text-base opacity-80 hover:text-secondary transition-colors">North Port, FL</a>
+            <a href="/areas/arcadia" className="block text-base opacity-80 hover:text-secondary transition-colors">Arcadia, FL</a>
+            <a href="/areas/wauchula" className="block text-base opacity-80 hover:text-secondary transition-colors">Wauchula, FL</a>
           </nav>
         </div>
 
-        {/* Info */}
         <div className="space-y-4">
           <h4 className="font-heading font-semibold text-base uppercase tracking-wider mb-4 opacity-60">Contact</h4>
           <div className="flex items-start gap-3">
@@ -47,7 +41,7 @@ const Footer = () => (
           </div>
           <div className="flex items-start gap-3">
             <MapPin className="w-4 h-4 mt-0.5 opacity-60" />
-            <span className="text-base opacity-80">5725 Britannia Dr, Sarasota, FL 34231</span>
+            <span className="text-base opacity-80">7821 235th Street East, Myakka, FL 34251</span>
           </div>
           <div className="flex items-start gap-3">
             <Clock className="w-4 h-4 mt-0.5 opacity-60" />

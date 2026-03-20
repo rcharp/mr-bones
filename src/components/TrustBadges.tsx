@@ -1,12 +1,11 @@
-import { Shield, Clock, Phone, Star, ThumbsUp } from "lucide-react";
+import { Shield, Clock, Star, ThumbsUp } from "lucide-react";
 import { motion } from "framer-motion";
 
 const badges = [
   { icon: Shield, label: "Licensed & Insured" },
-  { icon: Clock, label: "30+ Years Experience" },
-  { icon: Phone, label: "Same-Day Service" },
-  { icon: Star, label: "5-Star Rated" },
-  { icon: ThumbsUp, label: "Satisfaction Guaranteed" },
+  { icon: Clock, label: "31 Years in Business" },
+  { icon: Star, label: "156 Five-Star Reviews" },
+  { icon: ThumbsUp, label: "We Guarantee a Positive Experience" },
 ];
 
 const TrustBadges = () => (

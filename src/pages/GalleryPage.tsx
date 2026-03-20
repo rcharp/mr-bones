@@ -94,7 +94,7 @@ const images = [
 const GalleryPage = () => {
   useSEO({
     title: "Project Gallery | Mr. Bones Stump Grinding | Sarasota FL",
-    description: "Browse photos of our stump grinding projects in Sarasota, Bradenton & Venice. See our quality work firsthand.",
+    description: "Browse photos of our stump grinding projects in Sarasota, Bradenton, Venice, Arcadia & Wauchula. See our quality work firsthand.",
     canonical: "https://mrbonesstumpgrinding.com/gallery",
   });
 
@@ -114,7 +114,7 @@ const GalleryPage = () => {
                 Project Gallery
               </h1>
               <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-                Browse photos from our stump grinding projects across Sarasota and Manatee County.
+                Browse photos from our stump grinding projects across Southwest Florida.
               </p>
             </motion.div>
 

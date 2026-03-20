@@ -22,30 +22,12 @@ const services = [
     ],
   },
   {
-    title: "Root Removal",
-    href: "/services/root-removal",
+    title: "Stump Removal",
+    href: "/services/stump-removal",
     items: [
-      "Surface root grinding to prevent damage",
+      "Complete stump and root system removal",
       "Foundation and driveway protection",
-      "Complete root system removal",
-    ],
-  },
-  {
-    title: "Land Clearing",
-    href: "/services/land-clearing",
-    items: [
-      "Lot clearing for new construction",
-      "Multiple stump removal projects",
-      "Volume discounts for large jobs",
-    ],
-  },
-  {
-    title: "Storm Cleanup",
-    href: "/services/storm-cleanup",
-    items: [
-      "Post-hurricane stump removal",
-      "Emergency response available",
-      "Property restoration support",
+      "Surface root grinding included",
     ],
   },
 ];
@@ -145,7 +127,7 @@ const ServiceAreaPage = ({ city, tagline, intro }: ServiceAreaPageProps) => {
         <section className="py-12 lg:py-16 border-t border-border">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
             <p className="text-muted-foreground text-lg">
-              <a href="/about" className="text-secondary font-semibold hover:underline">Learn more about Mr. Bones</a> — over 30 years of professional stump grinding. You can also <a href="/gallery" className="text-secondary font-semibold hover:underline">browse our work gallery</a>.
+              <a href="/about" className="text-secondary font-semibold hover:underline">Learn more about Mr. Bones</a> — over 31 years of professional stump grinding. You can also <a href="/gallery" className="text-secondary font-semibold hover:underline">browse our work gallery</a>.
             </p>
           </div>
         </section>

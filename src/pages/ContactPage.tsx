@@ -9,7 +9,7 @@ import useSEO from "@/hooks/useSEO";
 const ContactPage = () => {
   useSEO({
     title: "Contact Mr. Bones Stump Grinding | Free Estimate | (941) 780-2579",
-    description: "Contact Mr. Bones Stump Grinding for a free estimate in Sarasota, Bradenton & Venice. Call (941) 780-2579.",
+    description: "Contact Mr. Bones Stump Grinding for a free estimate in Sarasota, Bradenton, Venice, Arcadia & Wauchula. Call (941) 780-2579.",
     canonical: "https://mrbonesstumpgrinding.com/contact",
   });
 
@@ -50,7 +50,7 @@ const ContactPage = () => {
                     Let's Talk
                   </h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    Whether you need a <a href="/services/stump-grinding" className="text-secondary hover:underline">single stump ground</a>, <a href="/services/land-clearing" className="text-secondary hover:underline">a lot cleared</a>, or help with <a href="/services/storm-cleanup" className="text-secondary hover:underline">storm damage cleanup</a> — give us a call. We offer free on-site estimates with no obligation.
+                    Whether you need a <a href="/services/stump-grinding" className="text-secondary hover:underline">single stump ground</a> or <a href="/services/stump-removal" className="text-secondary hover:underline">complete stump removal</a> — give us a call. We offer free on-site estimates with no obligation.
                   </p>
                 </div>
 
@@ -73,8 +73,8 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-heading font-semibold text-foreground mb-1">Address</h3>
-                      <p className="text-muted-foreground">5725 Britannia Dr, Sarasota, FL 34231</p>
-                      <p className="text-muted-foreground text-sm mt-1">Serving Sarasota, Bradenton, Venice & surrounding areas</p>
+                      <p className="text-muted-foreground">7821 235th Street East, Myakka, FL 34251</p>
+                      <p className="text-muted-foreground text-sm mt-1">Serving Sarasota, Bradenton, Venice, Arcadia & Wauchula</p>
                     </div>
                   </div>
 
@@ -84,14 +84,14 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-heading font-semibold text-foreground mb-1">Hours</h3>
-                      <p className="text-muted-foreground">Monday – Saturday · Call for availability</p>
+                      <p className="text-muted-foreground">Open 24 Hours</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="rounded-2xl overflow-hidden border border-border shadow-md">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.5!2d-82.5155!3d27.2920!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDE3JzMxLjIiTiA4MsKwMzAnNTUuOCJX!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus&q=5725+Britannia+Dr,+Sarasota,+FL+34231"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.5!2d-82.3!3d27.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus&q=7821+235th+Street+East,+Myakka,+FL+34251"
                     width="100%"
                     height="250"
                     style={{ border: 0 }}

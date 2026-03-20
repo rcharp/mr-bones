@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: "What areas do you serve?",
-    a: "We serve Sarasota, Bradenton, Venice, Palmetto, North Port, and surrounding areas throughout Sarasota and Manatee counties. We've been serving this area for over 30 years.",
+    a: "We serve Sarasota, Bradenton, Venice, Arcadia, Wauchula, and surrounding areas throughout Southwest Florida. We've been serving this area for over 31 years.",
   },
 ];
 

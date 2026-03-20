@@ -12,8 +12,8 @@ const AboutPage = () => {
   const { openQuoteModal } = useQuoteModal();
 
   useSEO({
-    title: "About Mr. Bones Stump Grinding | 30+ Years in Sarasota FL",
-    description: "Learn about Mr. Bones Stump Grinding — over 30 years of professional stump grinding in Sarasota, Bradenton & Venice. Licensed & insured. Call (941) 780-2579.",
+    title: "About Mr. Bones Stump Grinding | 31+ Years in Sarasota FL",
+    description: "Learn about Mr. Bones Stump Grinding — over 31 years of professional stump grinding at reasonable prices in Sarasota, Bradenton, Venice, Arcadia & Wauchula. Call (941) 780-2579.",
     canonical: "https://mrbonesstumpgrinding.com/about",
   });
 
@@ -34,7 +34,7 @@ const AboutPage = () => {
               <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Who We Are</span>
               <h1 className="font-heading text-4xl lg:text-6xl font-bold text-primary-foreground mt-3 uppercase">About Mr. Bones</h1>
               <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto mt-6 leading-relaxed">
-                Over 30 years of professional stump grinding in Southwest Florida.
+                Providing professional stump grinding at reasonable prices for over 31 years in Southwest Florida.
               </p>
             </motion.div>
           </div>
@@ -61,12 +61,12 @@ const AboutPage = () => {
                 className="space-y-6"
               >
                 <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Our Story</span>
-                <h2 className="font-heading text-3xl lg:text-4xl font-bold text-foreground uppercase">30+ Years of Experience</h2>
+                <h2 className="font-heading text-3xl lg:text-4xl font-bold text-foreground uppercase">31 Years of Experience</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Founded by Troy, Mr. Bones Stump Grinding has been serving Sarasota, Bradenton, and Venice for over 30 years. We specialize exclusively in stump grinding — it's what we do best.
+                  Founded by Troy, Mr. Bones Stump Grinding has been serving Sarasota, Bradenton, Venice, Arcadia, and Wauchula for over 31 years. Providing professional stump grinding at reasonable prices — it's what we do best.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  With three stump grinders in our fleet, Troy and his team have the right equipment for any job. From a single backyard stump to large commercial land clearing projects, we bring the same level of professionalism and care to every job.
+                  With three stump grinders in our fleet, Troy and his team have the right equipment for any job. From a single backyard stump to complete stump removal projects, we bring the same level of professionalism and care to every job.
                 </p>
               </motion.div>
             </div>
@@ -89,11 +89,11 @@ const AboutPage = () => {
                 <ul className="space-y-3">
                   {[
                     "Three professional stump grinders for any size job",
-                    "Over 30 years of industry experience",
+                    "Over 31 years of industry experience",
                     "Fully licensed and insured",
-                    "Fair, upfront pricing — no hidden fees",
+                    "Professional stump grinding at reasonable prices",
                     "Same-day service available",
-                    "Clean, professional results guaranteed",
+                    "156 five-star reviews — we guarantee a positive experience",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-primary-foreground/80">
                       <Check className="w-5 h-5 text-green-500 mt-0.5 shrink-0" />
@@ -111,13 +111,11 @@ const AboutPage = () => {
             <div className="grid md:grid-cols-2 gap-12">
               <div>
                 <h2 className="font-heading text-2xl font-bold text-foreground mb-4 uppercase">Our Services</h2>
-                <p className="text-muted-foreground mb-6">We specialize in stump grinding and related services.</p>
+                <p className="text-muted-foreground mb-6">We specialize in stump grinding and stump removal.</p>
                 <ul className="space-y-3">
                   {[
                     { label: "Stump Grinding — any size, any species", href: "/services/stump-grinding" },
-                    { label: "Root Removal — protect your property", href: "/services/root-removal" },
-                    { label: "Land Clearing — lot prep & construction", href: "/services/land-clearing" },
-                    { label: "Storm Cleanup — post-hurricane response", href: "/services/storm-cleanup" },
+                    { label: "Stump Removal — complete removal & root grinding", href: "/services/stump-removal" },
                   ].map((s) => (
                     <li key={s.href}>
                       <a href={s.href} className="flex items-center gap-2 text-muted-foreground hover:text-secondary transition-colors">
@@ -136,8 +134,8 @@ const AboutPage = () => {
                     { label: "Sarasota, FL", href: "/areas/sarasota" },
                     { label: "Bradenton, FL", href: "/areas/bradenton" },
                     { label: "Venice, FL", href: "/areas/venice" },
-                    { label: "Palmetto, FL", href: "/areas/palmetto" },
-                    { label: "North Port, FL", href: "/areas/north-port" },
+                    { label: "Arcadia, FL", href: "/areas/arcadia" },
+                    { label: "Wauchula, FL", href: "/areas/wauchula" },
                   ].map((a) => (
                     <li key={a.href}>
                       <a href={a.href} className="flex items-center gap-2 text-muted-foreground hover:text-secondary transition-colors">

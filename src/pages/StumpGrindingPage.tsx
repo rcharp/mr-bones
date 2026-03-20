@@ -3,8 +3,8 @@ import useSEO from "@/hooks/useSEO";
 
 const StumpGrindingPage = () => {
   useSEO({
-    title: "Stump Grinding Sarasota FL | Mr. Bones | 30+ Years",
-    description: "Professional stump grinding in Sarasota, Bradenton & Venice. Any size stump, same-day service available. Licensed & insured. Call (941) 780-2579.",
+    title: "Stump Grinding Sarasota FL | Mr. Bones | 31+ Years",
+    description: "Professional stump grinding in Sarasota, Bradenton, Venice, Arcadia & Wauchula. Any size stump, same-day service available. Licensed & insured. Call (941) 780-2579.",
     canonical: "https://mrbonesstumpgrinding.com/services/stump-grinding",
   });
 
@@ -12,7 +12,7 @@ const StumpGrindingPage = () => {
     <ServicePage
       title="Stump Grinding"
       subtitle="Our Specialty"
-      intro="Mr. Bones Stump Grinding has been the trusted name in professional stump removal across Sarasota, Bradenton, and Venice for over 30 years. No stump is too big or too small."
+      intro="Mr. Bones Stump Grinding has been the trusted name in professional stump grinding across Sarasota, Bradenton, Venice, Arcadia, and Wauchula for over 31 years. Providing professional stump grinding at reasonable prices. No stump is too big or too small."
       sections={[
         {
           heading: "Professional Stump Grinding Services",
@@ -32,10 +32,10 @@ const StumpGrindingPage = () => {
         {
           heading: "Why Choose Mr. Bones?",
           content: [
-            "Over 30 years of stump grinding experience",
+            "Over 31 years of stump grinding experience",
             "Three stump grinders for any size job",
             "Fully licensed and insured",
-            "Fair, upfront pricing",
+            "Professional stump grinding at reasonable prices",
             "Clean, professional work every time",
             "Locally owned and operated",
           ],
