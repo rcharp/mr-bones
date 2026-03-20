@@ -10,9 +10,7 @@ const navLinks = [
     label: "Services",
     children: [
       { label: "Stump Grinding", href: "/services/stump-grinding" },
-      { label: "Root Removal", href: "/services/root-removal" },
-      { label: "Land Clearing", href: "/services/land-clearing" },
-      { label: "Storm Cleanup", href: "/services/storm-cleanup" },
+      { label: "Stump Removal", href: "/services/stump-removal" },
     ],
   },
   {
@@ -21,8 +19,8 @@ const navLinks = [
       { label: "Sarasota, FL", href: "/areas/sarasota" },
       { label: "Bradenton, FL", href: "/areas/bradenton" },
       { label: "Venice, FL", href: "/areas/venice" },
-      { label: "Palmetto, FL", href: "/areas/palmetto" },
-      { label: "North Port, FL", href: "/areas/north-port" },
+      { label: "Arcadia, FL", href: "/areas/arcadia" },
+      { label: "Wauchula, FL", href: "/areas/wauchula" },
     ],
   },
   { label: "Gallery", href: "/gallery" },

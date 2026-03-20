@@ -1,9 +1,7 @@
 import { ArrowRight, Check } from "lucide-react";
 import { motion } from "framer-motion";
 import imgStumpGrinding from "@/assets/gallery/grinder-action.jpg";
-import imgRootRemoval from "@/assets/gallery/grinder-roots-yard.jpg";
-import imgCommercial from "@/assets/gallery/grinder-open-field.jpg";
-import imgStormCleanup from "@/assets/gallery/grinder-roadside-stumps.jpg";
+import imgStumpRemoval from "@/assets/gallery/grinder-roots-yard.jpg";
 
 const services = [
   {
@@ -18,36 +16,14 @@ const services = [
     ],
   },
   {
-    image: imgRootRemoval,
-    title: "Root Removal",
-    href: "/services/root-removal",
+    image: imgStumpRemoval,
+    title: "Stump Removal",
+    href: "/services/stump-removal",
     features: [
-      "Surface root grinding",
+      "Complete stump and root system removal",
       "Prevent sidewalk and driveway damage",
       "Protect foundations and plumbing",
-      "Complete root system removal",
-    ],
-  },
-  {
-    image: imgCommercial,
-    title: "Land Clearing",
-    href: "/services/land-clearing",
-    features: [
-      "Lot clearing for new construction",
-      "Multiple stump removal projects",
-      "Commercial property clearing",
-      "Volume discounts available",
-    ],
-  },
-  {
-    image: imgStormCleanup,
-    title: "Storm Cleanup",
-    href: "/services/storm-cleanup",
-    features: [
-      "Post-hurricane stump removal",
-      "Emergency response available",
-      "Fallen tree stump grinding",
-      "Property restoration support",
+      "Surface root grinding included",
     ],
   },
 ];
@@ -66,7 +42,7 @@ const ServicesSection = () => (
           Professional Stump Grinding Services
         </h2>
         <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-          Over 30 years of experience serving Sarasota, Bradenton & Venice.
+          Over 31 years of experience serving Sarasota, Bradenton, Venice, Arcadia & Wauchula.
         </p>
       </motion.div>
 

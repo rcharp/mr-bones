@@ -45,7 +45,7 @@ const useSEO = ({ title, description, canonical }: SEOProps) => {
     }
 
     return () => {
-      document.title = "Emmons Air | HVAC Services Palmetto FL";
+      document.title = "Mr. Bones Stump Grinding | Sarasota FL";
     };
   }, [title, description, canonical]);
 };

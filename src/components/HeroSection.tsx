@@ -14,7 +14,6 @@ const HeroSection = () => {
 
   return (
     <>
-      {/* Mobile truck image */}
       <div className="lg:hidden">
         <img
           src={truckImg}
@@ -54,10 +53,9 @@ const HeroSection = () => {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 className="text-lg text-primary-foreground/70 max-w-lg leading-relaxed break-words"
               >
-                <strong>Mr. Bones Stump Grinding</strong> has been serving Sarasota, Bradenton, and Venice for over 30 years. With three stump grinders, we have the right equipment for any job — big or small. Fast, professional, and affordable.
+                <strong>Mr. Bones Stump Grinding</strong> — providing professional stump grinding at reasonable prices. Serving Sarasota, Bradenton, Venice, Arcadia, and Wauchula for over 31 years. With three stump grinders, we have the right equipment for any job — big or small.
               </motion.p>
 
-              {/* Social Proof with reviewer photos */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -80,11 +78,10 @@ const HeroSection = () => {
                       <Star key={i} className="w-4 h-4 fill-secondary text-secondary" />
                     ))}
                   </div>
-                  <span className="text-base text-primary-foreground/70">Trusted by 150+ happy customers!</span>
+                  <span className="text-base text-primary-foreground/70">156 five-star reviews!</span>
                 </div>
               </motion.div>
 
-              {/* Review badges */}
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -112,7 +109,6 @@ const HeroSection = () => {
               </motion.div>
             </div>
 
-            {/* Right - Quote Form */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}

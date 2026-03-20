@@ -8,14 +8,12 @@ import { QuoteModalProvider } from "./components/QuoteModal";
 import Index from "./pages/Index";
 import ReviewPage from "./pages/ReviewPage";
 import StumpGrindingPage from "./pages/StumpGrindingPage";
-import RootRemovalPage from "./pages/RootRemovalPage";
-import LandClearingPage from "./pages/LandClearingPage";
-import StormCleanupPage from "./pages/StormCleanupPage";
+import StumpRemovalPage from "./pages/StumpRemovalPage";
 import SarasotaPage from "./pages/areas/SarasotaPage";
 import BradentonPage from "./pages/areas/BradentonPage";
 import VenicePage from "./pages/areas/VenicePage";
-import PalmettoPage from "./pages/areas/PalmettoPage";
-import NorthPortPage from "./pages/areas/NorthPortPage";
+import ArcadiaPage from "./pages/areas/ArcadiaPage";
+import WauchulaPage from "./pages/areas/WauchulaPage";
 import GalleryPage from "./pages/GalleryPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
@@ -65,14 +63,12 @@ const App = () => (
             <Route path="/quote" element={<QuotePage />} />
             <Route path="/review" element={<ReviewPage />} />
             <Route path="/services/stump-grinding" element={<StumpGrindingPage />} />
-            <Route path="/services/root-removal" element={<RootRemovalPage />} />
-            <Route path="/services/land-clearing" element={<LandClearingPage />} />
-            <Route path="/services/storm-cleanup" element={<StormCleanupPage />} />
+            <Route path="/services/stump-removal" element={<StumpRemovalPage />} />
             <Route path="/areas/sarasota" element={<SarasotaPage />} />
             <Route path="/areas/bradenton" element={<BradentonPage />} />
             <Route path="/areas/venice" element={<VenicePage />} />
-            <Route path="/areas/palmetto" element={<PalmettoPage />} />
-            <Route path="/areas/north-port" element={<NorthPortPage />} />
+            <Route path="/areas/arcadia" element={<ArcadiaPage />} />
+            <Route path="/areas/wauchula" element={<WauchulaPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />

@@ -103,16 +103,13 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
           </div>
         </section>
 
-        {/* Related Services */}
         <section className="py-16 lg:py-20">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl">
             <h2 className="font-heading text-2xl lg:text-3xl font-bold text-foreground mb-8 text-center uppercase">Explore Our Other Services</h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid sm:grid-cols-2 gap-4">
               {[
                 { label: "Stump Grinding", href: "/services/stump-grinding" },
-                { label: "Root Removal", href: "/services/root-removal" },
-                { label: "Land Clearing", href: "/services/land-clearing" },
-                { label: "Storm Cleanup", href: "/services/storm-cleanup" },
+                { label: "Stump Removal", href: "/services/stump-removal" },
               ].map((s) => (
                 <a
                   key={s.href}
@@ -126,24 +123,23 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
           </div>
         </section>
 
-        {/* Service Areas */}
         <section className="py-16 lg:py-20 border-t border-border">
           <div className="container mx-auto px-4 lg:px-8 max-w-4xl text-center">
             <div className="flex items-center justify-center gap-2 mb-3">
               <MapPin className="w-5 h-5 text-secondary" />
               <span className="text-sm font-semibold text-secondary uppercase tracking-wider">Areas We Serve</span>
             </div>
-            <h2 className="font-heading text-2xl lg:text-3xl font-bold text-foreground mb-6 uppercase">Serving Sarasota & Manatee Counties</h2>
+            <h2 className="font-heading text-2xl lg:text-3xl font-bold text-foreground mb-6 uppercase">Serving Southwest Florida</h2>
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-              We provide professional stump grinding throughout the greater Sarasota and Bradenton area.
+              We provide professional stump grinding and stump removal throughout Southwest Florida.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {[
                 { label: "Sarasota, FL", href: "/areas/sarasota" },
                 { label: "Bradenton, FL", href: "/areas/bradenton" },
                 { label: "Venice, FL", href: "/areas/venice" },
-                { label: "Palmetto, FL", href: "/areas/palmetto" },
-                { label: "North Port, FL", href: "/areas/north-port" },
+                { label: "Arcadia, FL", href: "/areas/arcadia" },
+                { label: "Wauchula, FL", href: "/areas/wauchula" },
               ].map((area) => (
                 <a
                   key={area.href}
@@ -157,7 +153,6 @@ const ServicePage = ({ title, subtitle, intro, sections, benefits }: ServicePage
           </div>
         </section>
 
-        {/* CTA */}
         <section className="py-16 relative overflow-hidden" style={{ backgroundColor: "#1a1a1a" }}>
           <div className="container mx-auto px-4 lg:px-8 text-center">
             <h2 className="font-heading text-3xl lg:text-4xl font-bold text-primary-foreground mb-4 uppercase">Ready to Get Started?</h2>
