@@ -114,7 +114,7 @@ const GalleryPage = () => {
                 Project Gallery
               </h1>
               <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-                Browse photos from our stump grinding projects across Sarasota and Manatee County.
+                Browse photos from our stump grinding projects across Southwest Florida.
               </p>
             </motion.div>
 
