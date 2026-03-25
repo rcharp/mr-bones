@@ -43,7 +43,21 @@ const QuoteForm = ({ showHeader = true, compact = false, className = "", style }
     setIsSubmitting(true);
 
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const response = await fetch(
+        "https://services.leadconnectorhq.com/hooks/c53B26PcZFpdhgC5tp5U/webhook-trigger/xY8QMH4Lyng5Zt7DhV4O",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            full_name: formData.fullName,
+            phone: formData.phone,
+            message: formData.helpWith,
+            consent_marketing: consentMarketing,
+            consent_service: consentService,
+          }),
+        }
+      );
+      if (!response.ok) throw new Error("Webhook failed");
       setIsSubmitted(true);
     } catch {
       toast.error("Something went wrong. Please try again or call us.");
