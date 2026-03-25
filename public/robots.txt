@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://rcharp.github.io/mr-bones/sitemap.xml
+Sitemap: https://mr-bones.lovable.app/sitemap.xml
