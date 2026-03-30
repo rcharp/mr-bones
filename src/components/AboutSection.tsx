@@ -1,6 +1,5 @@
 import { MapPin, Phone, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import aboutImg from "@/assets/gallery/grinder-action.jpg";
 
 const AboutSection = () => (
   <section id="about" className="py-20 lg:py-28">
