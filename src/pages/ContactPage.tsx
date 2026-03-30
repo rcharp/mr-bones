@@ -91,7 +91,7 @@ const ContactPage = () => {
 
                 <div className="rounded-2xl overflow-hidden border border-border shadow-md">
                   <iframe
-                    src="https://maps.google.com/maps?q=7821+235th+Street+East,+Myakka,+FL+34251&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3546.3430022874613!2d-82.51508009999999!3d27.271127500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c34173ffffffff%3A0x5cce2dc789445f38!2sMr%20Bones%20Stump%20Grinding!5e0!3m2!1sen!2sus!4v1774914995737!5m2!1sen!2sus"
                     width="100%"
                     height="250"
                     style={{ border: 0 }}
