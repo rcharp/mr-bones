@@ -20,6 +20,7 @@ import ContactPage from "./pages/ContactPage";
 import QuotePage from "./pages/QuotePage";
 import BlogPage from "./pages/BlogPage";
 import BlogPostPage from "./pages/BlogPostPage";
+import GetYourDiscountPage from "./pages/GetYourDiscountPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
