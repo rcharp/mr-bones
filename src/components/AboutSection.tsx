@@ -1,6 +1,5 @@
 import { MapPin, Phone, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import aboutImg from "@/assets/gallery/grinder-action.jpg";
 
 const AboutSection = () => (
   <section id="about" className="py-20 lg:py-28">
@@ -56,10 +55,15 @@ const AboutSection = () => (
           className="relative"
         >
           <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src={aboutImg}
-                alt="Mr. Bones stump grinder in action"
-                className="w-full h-full object-cover"
+              <iframe
+                src="https://maps.google.com/maps?q=7821+235th+Street+East,+Myakka,+FL+34251&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Mr. Bones Stump Grinding location"
               />
             </div>
         </motion.div>
