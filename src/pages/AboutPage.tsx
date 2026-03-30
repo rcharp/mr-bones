@@ -13,7 +13,7 @@ const AboutPage = () => {
 
   useSEO({
     title: "About Mr. Bones Stump Grinding | 31+ Years in Sarasota FL",
-    description: "Learn about Mr. Bones Stump Grinding — over 31 years of professional stump grinding at reasonable prices in Sarasota, Bradenton, Venice, Arcadia & Wauchula. Call (941) 780-2579.",
+    description: "Learn about Mr. Bones Stump Grinding — over 31 years of professional stump grinding at reasonable prices in Sarasota, Bradenton, Venice, Arcadia & Wauchula. Call (941) 264-1659.",
     canonical: "https://mrbonesstumpgrinding.com/about",
   });
 

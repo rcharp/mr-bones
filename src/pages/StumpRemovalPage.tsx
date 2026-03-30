@@ -4,7 +4,7 @@ import useSEO from "@/hooks/useSEO";
 const StumpRemovalPage = () => {
   useSEO({
     title: "Stump Removal Sarasota FL | Mr. Bones Stump Grinding",
-    description: "Professional stump removal and root grinding in Sarasota, Bradenton, Venice, Arcadia & Wauchula. Protect driveways, foundations & plumbing. Call (941) 780-2579.",
+    description: "Professional stump removal and root grinding in Sarasota, Bradenton, Venice, Arcadia & Wauchula. Protect driveways, foundations & plumbing. Call (941) 264-1659.",
     canonical: "https://mrbonesstumpgrinding.com/services/stump-removal",
   });
 

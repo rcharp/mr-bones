@@ -8,8 +8,8 @@ import useSEO from "@/hooks/useSEO";
 
 const ContactPage = () => {
   useSEO({
-    title: "Contact Mr. Bones Stump Grinding | Free Estimate | (941) 780-2579",
-    description: "Contact Mr. Bones Stump Grinding for a free estimate in Sarasota, Bradenton, Venice, Arcadia & Wauchula. Call (941) 780-2579.",
+    title: "Contact Mr. Bones Stump Grinding | Free Estimate | (941) 264-1659",
+    description: "Contact Mr. Bones Stump Grinding for a free estimate in Sarasota, Bradenton, Venice, Arcadia & Wauchula. Call (941) 264-1659.",
     canonical: "https://mrbonesstumpgrinding.com/contact",
   });
 
@@ -61,8 +61,8 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-heading font-semibold text-foreground mb-1">Phone</h3>
-                      <a href="tel:+19417802579" className="text-muted-foreground hover:text-secondary transition-colors">
-                        (941) 780-2579
+                      <a href="tel:+19412641659" className="text-muted-foreground hover:text-secondary transition-colors">
+                        (941) 264-1659
                       </a>
                     </div>
                   </div>

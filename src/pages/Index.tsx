@@ -40,7 +40,7 @@ const beforeAfterPairs = [
 const Index = () => {
   useSEO({
     title: "Mr. Bones Stump Grinding | Sarasota FL | 31+ Years",
-    description: "Professional stump grinding and stump removal in Sarasota, Bradenton, Venice, Arcadia & Wauchula FL. 31+ years experience, licensed & insured. Call (941) 780-2579 for a free estimate.",
+    description: "Professional stump grinding and stump removal in Sarasota, Bradenton, Venice, Arcadia & Wauchula FL. 31+ years experience, licensed & insured. Call (941) 264-1659 for a free estimate.",
     canonical: "https://mrbonesstumpgrinding.com/",
   });
 

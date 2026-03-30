@@ -23,12 +23,12 @@ const CTASection = () => {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="tel:+19417802579"
+              href="tel:+19412641659"
               className="inline-flex items-center gap-2 px-8 py-4 font-semibold border-2 border-secondary text-secondary bg-transparent hover:bg-secondary/10 transition-colors"
               style={{ borderRadius: "10px" }}
             >
               <Phone className="w-5 h-5" />
-              (941) 780-2579
+              (941) 264-1659
             </a>
             <button
               onClick={openQuoteModal}

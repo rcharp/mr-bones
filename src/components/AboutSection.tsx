@@ -38,8 +38,8 @@ const AboutSection = () => (
               </div>
               <div>
                 <div className="text-sm text-muted-foreground">Phone</div>
-                <a href="tel:+19417802579" className="text-base font-semibold text-foreground hover:text-secondary transition-colors">
-                  (941) 780-2579
+                <a href="tel:+19412641659" className="text-base font-semibold text-foreground hover:text-secondary transition-colors">
+                  (941) 264-1659
                 </a>
               </div>
            </div>
