@@ -20,6 +20,7 @@ import ContactPage from "./pages/ContactPage";
 import QuotePage from "./pages/QuotePage";
 import BlogPage from "./pages/BlogPage";
 import BlogPostPage from "./pages/BlogPostPage";
+import GetYourDiscountPage from "./pages/GetYourDiscountPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -74,6 +75,7 @@ const App = () => (
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/tips" element={<BlogPage />} />
             <Route path="/tips/:slug" element={<BlogPostPage />} />
+            <Route path="/get-your-discount" element={<GetYourDiscountPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </QuoteModalProvider>
