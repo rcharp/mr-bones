@@ -9,7 +9,7 @@ import {
 const faqs = [
   {
     q: "How much does stump grinding cost?",
-    a: "The cost depends on the size, location, and number of stumps. We offer free estimates — just give us a call at (941) 780-2579 and we'll come out to assess your job and give you a fair, upfront price.",
+    a: "The cost depends on the size, location, and number of stumps. We offer free estimates — just give us a call at (941) 264-1659 and we'll come out to assess your job and give you a fair, upfront price.",
   },
   {
     q: "How long does stump grinding take?",

@@ -4,7 +4,7 @@ import useSEO from "@/hooks/useSEO";
 const StumpGrindingPage = () => {
   useSEO({
     title: "Stump Grinding Sarasota FL | Mr. Bones | 31+ Years",
-    description: "Professional stump grinding in Sarasota, Bradenton, Venice, Arcadia & Wauchula. Any size stump, same-day service available. Licensed & insured. Call (941) 780-2579.",
+    description: "Professional stump grinding in Sarasota, Bradenton, Venice, Arcadia & Wauchula. Any size stump, same-day service available. Licensed & insured. Call (941) 264-1659.",
     canonical: "https://mrbonesstumpgrinding.com/services/stump-grinding",
   });
 

@@ -30,7 +30,7 @@ export const blogPosts: BlogPost[] = [
       "**3. Property Value** — A well-maintained yard adds curb appeal. A rotting stump does the opposite. If you're thinking about selling, stump removal is one of the easiest ways to boost your home's appearance.",
       "**4. New Growth** — Some stumps sprout new shoots that can be difficult and expensive to manage. Grinding the stump eliminates regrowth entirely.",
       "**5. Lawn Care Hassle** — Mowing around stumps is annoying and can damage your mower. Removing the stump gives you a clean, usable yard.",
-      "At Mr. Bones Stump Grinding, we grind stumps below grade so you can replant, resod, or just enjoy a clean yard. Call us at (941) 780-2579 for a free quote.",
+      "At Mr. Bones Stump Grinding, we grind stumps below grade so you can replant, resod, or just enjoy a clean yard. Call us at (941) 264-1659 for a free quote.",
     ],
   },
   {
@@ -46,7 +46,7 @@ export const blogPosts: BlogPost[] = [
       "**Stump Removal** involves pulling the entire stump and root ball out of the ground using heavy equipment. This leaves a large hole that needs to be filled and is significantly more expensive and disruptive.",
       "**Which Should You Choose?** For most residential and commercial jobs, stump grinding is the way to go. It's faster, cheaper, less invasive, and leaves you with usable mulch. Full removal is typically only necessary for construction projects where the entire root system needs to be cleared.",
       "**Cost Comparison** — Stump grinding typically costs a fraction of full removal. The price depends on the stump's diameter, location, and accessibility. We always provide free, no-obligation estimates.",
-      "**The Mr. Bones Advantage** — With three professional-grade stump grinders, we have the right machine for any job. Small backyard stump? No problem. Giant oak stump? We've got you covered. Call (941) 780-2579 today.",
+      "**The Mr. Bones Advantage** — With three professional-grade stump grinders, we have the right machine for any job. Small backyard stump? No problem. Giant oak stump? We've got you covered. Call (941) 264-1659 today.",
     ],
   },
   {
@@ -63,7 +63,7 @@ export const blogPosts: BlogPost[] = [
       "**Before Hurricane Season** — If you have stumps from previous storms, it's smart to get them ground before June when hurricane season starts. A clean yard means fewer projectiles and hazards if another storm hits.",
       "**Before Landscaping Projects** — Planning to resod, plant new trees, or install a patio? Get your stumps ground first. We grind below grade so the area is ready for whatever comes next.",
       "**Rainy Season Considerations** — Florida's summer rainy season (June–September) can make some yards muddy and harder to access with equipment. If possible, schedule your grinding during the drier months for the smoothest experience.",
-      "Ready to schedule? Call Mr. Bones at (941) 780-2579 — we offer same-day service when available!",
+      "Ready to schedule? Call Mr. Bones at (941) 264-1659 — we offer same-day service when available!",
     ],
   },
   {
@@ -80,7 +80,7 @@ export const blogPosts: BlogPost[] = [
       "**Accessibility** — If the stump is in an easy-to-reach area, the job goes faster and costs less. Stumps in tight spaces, behind fences, or on slopes may take more time and equipment.",
       "**Root Grinding** — Basic stump grinding removes the stump itself. If you also need surface roots ground down (to protect sidewalks, driveways, or foundations), that's an additional service we offer.",
       "**What's Included** — Our pricing includes the grinding itself plus leaving the wood chip mulch on-site. We can also haul away the mulch or spread it in garden beds for an additional fee.",
-      "**Free Estimates** — The best way to know your exact cost is to call us for a free, no-obligation estimate. We'll come to your property, assess the job, and give you a fair, upfront price. Call (941) 780-2579.",
+      "**Free Estimates** — The best way to know your exact cost is to call us for a free, no-obligation estimate. We'll come to your property, assess the job, and give you a fair, upfront price. Call (941) 264-1659.",
     ],
   },
   {
@@ -97,7 +97,7 @@ export const blogPosts: BlogPost[] = [
       "**Preventive Root Barriers** — After grinding, we can recommend root barrier installations to prevent regrowth in sensitive areas like near foundations or plumbing lines.",
       "**When the Tree Needs to Go** — Sometimes the root damage is severe enough that the tree should be removed entirely. In these cases, we can grind the stump and major roots after your tree service takes the tree down.",
       "**Cost of Inaction** — Ignoring root damage only makes it worse. A cracked sidewalk today can become a foundation problem tomorrow. Root grinding is far cheaper than concrete or plumbing repairs.",
-      "Don't wait until the damage gets worse. Call Mr. Bones at (941) 780-2579 for a free assessment of your root problems.",
+      "Don't wait until the damage gets worse. Call Mr. Bones at (941) 264-1659 for a free assessment of your root problems.",
     ],
   },
   {
@@ -114,7 +114,7 @@ export const blogPosts: BlogPost[] = [
       "**Priority Order** — Focus on stumps that block driveways, threaten structures, or create safety hazards first. Stumps in open areas can wait until access is easier.",
       "**Emergency Response** — At Mr. Bones, we prioritize emergency storm cleanup. We understand the urgency and work to clear hazardous stumps as quickly as possible after a storm.",
       "**Multiple Stump Discounts** — Storms often leave multiple stumps. We offer volume pricing for multi-stump hurricane cleanup jobs, helping you restore your property without breaking the bank.",
-      "**Don't Wait** — Leaving storm-damaged stumps to rot invites pests and creates trip hazards. The sooner you get them ground, the sooner your yard recovers. Call (941) 780-2579 for emergency stump grinding.",
+      "**Don't Wait** — Leaving storm-damaged stumps to rot invites pests and creates trip hazards. The sooner you get them ground, the sooner your yard recovers. Call (941) 264-1659 for emergency stump grinding.",
     ],
   },
 ];

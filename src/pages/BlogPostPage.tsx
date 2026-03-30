@@ -95,12 +95,12 @@ const BlogPostPage = () => {
                     Call us today for a free, no-obligation quote.
                   </p>
                   <a
-                    href="tel:+19417802579"
+                    href="tel:+19412641659"
                     className="inline-flex items-center gap-2 px-8 py-4 bg-secondary text-secondary-foreground font-semibold hover:opacity-90 transition-opacity"
                     style={{ borderRadius: "10px" }}
                   >
                     <Phone className="w-5 h-5" />
-                    (941) 780-2579
+                    (941) 264-1659
                   </a>
                 </div>
               </motion.div>

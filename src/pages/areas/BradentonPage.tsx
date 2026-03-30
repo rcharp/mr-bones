@@ -4,7 +4,7 @@ import useSEO from "@/hooks/useSEO";
 const BradentonPage = () => {
   useSEO({
     title: "Stump Grinding Bradenton FL | Mr. Bones | Free Estimates",
-    description: "Professional stump grinding in Bradenton FL. 31+ years experience, licensed & insured. Call (941) 780-2579 for a free estimate.",
+    description: "Professional stump grinding in Bradenton FL. 31+ years experience, licensed & insured. Call (941) 264-1659 for a free estimate.",
     canonical: "https://mrbonesstumpgrinding.com/areas/bradenton",
   });
 
