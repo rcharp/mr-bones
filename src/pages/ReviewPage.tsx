@@ -29,7 +29,7 @@ const ReviewPage = () => {
 
   const handleRating = (stars: number) => {
     if (stars >= 4) {
-      window.location.href = "https://share.google/1sQ79CbroLTQwvUdm";
+      window.location.href = "https://g.page/r/CThfRInHLc5cEAE/review";
     } else {
       setView("form");
     }
