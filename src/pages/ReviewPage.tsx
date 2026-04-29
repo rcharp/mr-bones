@@ -27,12 +27,8 @@ const ReviewPage = () => {
     canonical: "https://mrbonesstumpgrinding.com/review",
   });
 
-  const handleRating = (stars: number) => {
-    if (stars >= 4) {
-      window.location.href = "https://g.page/r/CThfRInHLc5cEAE/review";
-    } else {
-      setView("form");
-    }
+  const handleRating = (_stars: number) => {
+    window.location.href = "https://g.page/r/CThfRInHLc5cEAE/review";
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
